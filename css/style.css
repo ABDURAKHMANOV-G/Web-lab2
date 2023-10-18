@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
- 
+
 }
 
-:root{
+:root {
     font-size: 62.5%;
     --gray-color: #afb4c4;
-    --blue-color: rgba(20, 34, 81, 1); 
+    --blue-color: rgba(20, 34, 81, 1);
     --light-blue-color: rgba(33, 56, 135, 1);
 }
 
-body{
+body {
     font-family: 'Mulish', sans-serif;
     font-size: 2rem;
     color: var(--blue-color);
@@ -20,24 +20,32 @@ body{
     line-height: auto;
 }
 
-.line{
+ul{
+    list-style-type: none;
+}
+
+.line {
     margin-top: 70px;
 }
 
+/*
+.wrapper{
+    width: 100px;
+}*/
 
-#blue-text{
+.blue-text {
     font-size: 6rem;
     color: var(--blue-color);
     font-weight: bold;
 }
 
-#gray-text{
-    font-size: 6rem;    
-    color: #afb4c4;
+.gray-text {
+    font-size: 6rem;
+    color: var(--gray-color);
     font-weight: bold;
 }
 
-.text-p-head{
+.text-p-head {
     color: var(--gray-color);
     font-size: 1.9rem;
     font-weight: 500;
@@ -46,13 +54,13 @@ body{
     margin-top: 20px;
 }
 
-.text-p-cl{
+.text-p-cl {
     color: var(--gray-color);
     font-size: 2.5rem;
     font-weight: 900;
 }
 
-.button-font{
+.button-font {
     color: var(--light-blue-color);
     font-size: 1.5rem;
     height: 50px;
@@ -61,33 +69,29 @@ body{
     background-color: rgba(33, 56, 135, 0.06);
     border-radius: 50px;
     border-color: var(--blue-color);
-    margin:  auto;
+    margin: auto;
 }
 
-.button-font-nonebox{
+.button-font-nonebox {
     color: var(--light-blue-color);
     font-size: 1.5rem;
     height: 65px;
     width: 400px;
     font-weight: 900;
-    margin:  auto;
-    display: block;
     background-color: rgba(33, 56, 135, 0.06);
     border: none;
     border-radius: 15px;
     text-align: left;
     padding: 10px 30px;
     margin-top: 40px;
+    box-shadow: 0px 7px 5px 0px var(--gray-color);
 }
 
-.button-font-box{
+.button-font-box {
     font-size: 1.5rem;
     height: 65px;
     width: 400px;
     text-align: left;
-    margin-left:  auto;
-    margin-right: auto;
-    display: block;
     padding: 10px 30px;
     background-color: var(--blue-color);
     border: none;
@@ -95,7 +99,7 @@ body{
     color: white;
 }
 
-.button-settings{
+.button-settings {
     background-color: white;
     background-image: url(/Settings.png);
     background-repeat: no-repeat;
@@ -106,45 +110,44 @@ body{
     display: block;
     margin-left: auto;
     margin-right: 5px;
-    border: none;    
+    border: none;
 }
 
 
-.text-uslugi{
+.text-uslugi {
     line-height: 2;
     text-align: left;
     padding: 30px;
 }
 
-.Uslugi{
+.Uslugi {
     padding: 10px;
     width: 150px;
 }
 
-.main-nav{
+.main-nav {
     font-weight: 600;
     padding: 5px;
     color: var(--light-blue-color);
     font-size: 2rem;
     text-decoration: none;
+    display: none;
 }
 
 
-.header2{
+.header2 {
     color: var(--blue-color);
     font-size: 6rem;
     text-align: left;
+    padding: 20px;
 }
 
-.how-work{
+.how-work {
     font-size: 3rem;
-    width: 215px;
     text-align: left;
-    margin-left: auto;
-    margin-right: 100px;
 }
 
-.text-agreement{
+.text-agreement {
     color: var(--gray-color);
     display: block;
     margin-top: 30px;
@@ -152,28 +155,28 @@ body{
     width: 300px;
 }
 
-.inp{
+.inp {
     font-size: 3rem;
     text-align: left;
     background: transparent;
     border: none;
     border-bottom: 1px solid #444;
-    width: 900px;
+    width: 700px;
     height: 60px;
     margin-top: 30px;
 }
 
-.form{
-    
+.form {
+
     display: block;
-    
+
     width: 400px;
     padding: 10px 30px;
     width: 100%;
 
 }
 
-#confidience{
+#confidience {
     color: var(--gray-color);
     position: absolute;
     left: 20px;
@@ -182,14 +185,15 @@ body{
     margin-top: 50px;
 }
 
-#text-2023{
+#text-2023 {
     color: var(--gray-color);
     position: absolute;
     left: 1430px;
     height: 100px;
     margin-top: 50px;
 }
-#design{
+
+#design {
     color: var(--light-blue-color);
     position: absolute;
     left: 715px;
@@ -197,14 +201,11 @@ body{
     width: 150px;
     margin-top: 50px;
 }
-#connection{
+
+#connection {
     width: 200px;
 }
-.text-p{
+
+.text-p {
     color: var(--gray-color);
 }
-
-
-
-
-
