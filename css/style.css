@@ -4,10 +4,21 @@
 
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     font-size: 62.5%;
     --gray-color: #afb4c4;
     --blue-color: rgba(20, 34, 81, 1);
+    
     --light-blue-color: rgba(33, 56, 135, 1);
 }
 
@@ -15,12 +26,44 @@ body {
     font-family: 'Mulish', sans-serif;
     font-size: 2rem;
     color: var(--blue-color);
-    text-align: left;
-    padding: 10px 20px;
     line-height: auto;
 }
 
-ul{
+h1,
+h2{
+    display: block;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    font-size: 3em;
+    margin: auto;
+}
+
+h3{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto;
+    max-width: 600px;
+}
+
+
+footer{
+    min-width: 1000px;
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+
+section{
+    display: block;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    min-width: 1000px;
+}
+
+ul {
     list-style-type: none;
 }
 
@@ -32,6 +75,9 @@ ul{
 .wrapper{
     width: 100px;
 }*/
+
+/*УБрать Позицию Абсолют!!!*/
+
 
 .blue-text {
     font-size: 6rem;
@@ -46,12 +92,11 @@ ul{
 }
 
 .text-p-head {
+    text-align: center;
+    padding: 20px;
     color: var(--gray-color);
     font-size: 1.9rem;
     font-weight: 500;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 .text-p-cl {
@@ -63,7 +108,6 @@ ul{
 .button-font {
     color: var(--light-blue-color);
     font-size: 1.5rem;
-    height: 50px;
     padding: 10px 20px;
     font-weight: 900;
     background-color: rgba(33, 56, 135, 0.06);
@@ -75,14 +119,13 @@ ul{
 .button-font-nonebox {
     color: var(--light-blue-color);
     font-size: 1.5rem;
-    height: 65px;
     width: 400px;
     font-weight: 900;
     background-color: rgba(33, 56, 135, 0.06);
     border: none;
     border-radius: 15px;
     text-align: left;
-    padding: 10px 30px;
+    padding: 20px 30px;
     margin-top: 40px;
     box-shadow: 0px 7px 5px 0px var(--gray-color);
 }
@@ -116,14 +159,9 @@ ul{
 
 .text-uslugi {
     line-height: 2;
-    text-align: left;
     padding: 30px;
 }
 
-.Uslugi {
-    padding: 10px;
-    width: 150px;
-}
 
 .main-nav {
     font-weight: 600;
@@ -138,26 +176,28 @@ ul{
 .header2 {
     color: var(--blue-color);
     font-size: 6rem;
-    text-align: left;
     padding: 20px;
 }
 
-.how-work {
-    font-size: 3rem;
-    text-align: left;
+.spisok li{
+    display: block;
+    font-size: 1.6em;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid var(--gray-color);
+    border-radius: 20px;
+    
 }
 
 .text-agreement {
     color: var(--gray-color);
     display: block;
-    margin-top: 30px;
-    margin-left: 20px;
-    width: 300px;
+    text-align: center;
+    padding: 40px;
 }
 
 .inp {
     font-size: 3rem;
-    text-align: left;
     background: transparent;
     border: none;
     border-bottom: 1px solid #444;
@@ -167,45 +207,34 @@ ul{
 }
 
 .form {
-
     display: block;
-
     width: 400px;
     padding: 10px 30px;
     width: 100%;
-
 }
 
-#confidience {
+.confidience {
     color: var(--gray-color);
-    position: absolute;
-    left: 20px;
-    height: 100px;
-    width: 10px;
-    margin-top: 50px;
 }
 
-#text-2023 {
+.text-2023 {
+    position: static;
+    right: auto;
     color: var(--gray-color);
-    position: absolute;
-    left: 1430px;
-    height: 100px;
-    margin-top: 50px;
 }
 
-#design {
+.design {
+    
     color: var(--light-blue-color);
-    position: absolute;
-    left: 715px;
-    height: 100px;
-    width: 150px;
-    margin-top: 50px;
-}
-
-#connection {
-    width: 200px;
 }
 
 .text-p {
     color: var(--gray-color);
 }
+
+.footer {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
