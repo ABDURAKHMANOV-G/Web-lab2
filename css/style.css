@@ -50,17 +50,80 @@ h3{
 
 
 footer{
-    min-width: 1000px;
+    min-width: 700px;
     padding: 40px 0 40px 0;
     text-align: center;
 }
 
 section{
     display: block;
-    padding: 50px;
-    margin: 20px;
     text-align: center;
-    min-width: 1000px;
+}
+
+div.all-clients{
+    display: block;
+    position: relative;
+    background-color: rgba(243, 246, 249, 1);
+    border-radius: 45px;
+    width: 100%;
+    padding: 100px 0 20px 0;
+    margin-top: 50px;
+}
+
+div.client{
+    background-color: white;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+div.container-blocks{
+    display: flex;
+    justify-content: center;
+}
+
+div.container1{
+    position: relative;
+    width: 40%;
+}
+
+div.container2{
+    position: relative;
+    width: 40%;
+}
+
+#right-bottom-img{
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+    width: 420px;
+    z-index: 0.1;
+}
+
+#first{
+    position: relative;
+    left: 130px;
+    padding-bottom: 65px;
+    width: 90px;
+}
+#second{
+    position: relative;
+    left: 130px;
+    padding-bottom: 65px;
+    width: 90px;
+}
+#third{
+    position: relative;
+    left: 130px;
+    padding-bottom: 65px;
+    width: 90px;
+}
+#fourth{
+    position: relative;
+    left: 130px;
+    padding-bottom: 65px;
+    width: 90px;
 }
 
 ul {
@@ -70,14 +133,6 @@ ul {
 .line {
     margin-top: 70px;
 }
-
-/*
-.wrapper{
-    width: 100px;
-}*/
-
-/*УБрать Позицию Абсолют!!!*/
-
 
 .blue-text {
     font-size: 6rem;
@@ -144,7 +199,7 @@ ul {
 
 .button-settings {
     background-color: white;
-    background-image: url(/Settings.png);
+    background-image: url(/Images/Settings.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -179,15 +234,26 @@ ul {
     padding: 20px;
 }
 
+
 .spisok li{
-    display: block;
+    display: flex;
     font-size: 1.6em;
     padding: 20px;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid var(--gray-color);
     border-radius: 20px;
-    
+    min-width: 500px;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
+
+.how-work-images{
+    position: relative;
+    width: 140px;
+}
+
+
 
 .text-agreement {
     color: var(--gray-color);
