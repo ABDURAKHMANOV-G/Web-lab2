@@ -26,7 +26,6 @@ body {
     font-family: 'Mulish', sans-serif;
     font-size: 2rem;
     color: var(--blue-color);
-    line-height: auto;
 }
 
 h1,
@@ -60,9 +59,10 @@ section{
     text-align: center;
 }
 
+
 .logo{
     position: relative;
-    top: 50px;
+    top: 40px;
     padding-left: 20px;
     width: 12em;
 }
@@ -72,6 +72,9 @@ hr{
     margin: 50px;
 }
 
+.sect1{
+    height: 1150px;
+}
 
 .bg-sect1{
     display: block;
@@ -124,7 +127,7 @@ div.container2{
     right: 0;
     bottom: 0; 
     width: 420px;
-    z-index: 0.1;
+    z-index: 0;
 }
 
 #first{
@@ -182,6 +185,75 @@ ul {
     left: 30px;
 }
 
+div.uslugi{
+    display: block;
+    position: relative;
+    background-color: white;
+    border-radius: 45px;
+    padding: 10px 40px 30px 25px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 60%;
+}
+
+.uslugs-image-1{
+    display: block;
+    position: relative;
+    background-color: rgba(243, 246, 249, 1);
+    border-radius: 45px;
+    padding: 30px 20px 20px 35px;
+    width: 405px;
+}
+
+.uslugs-image-2{
+    display: block;
+    position: relative;
+    background-color: rgba(243, 246, 249, 1);
+    border-radius: 45px;
+    padding: 0px 20px 0px 5px;
+    width: 405px;
+}
+
+.uslugs-image-3{
+    display: block;
+    position: relative;
+    background-color: rgba(243, 246, 249, 1);
+    border-radius: 45px;
+    padding: 40px 0px 40px 90px;
+    width: 405px;
+}
+
+.uslugs-image-4{
+    display: block;
+    position: relative;
+    background-color: rgba(243, 246, 249, 1);
+    border-radius: 45px;
+    padding: 15px 0px 15px 150px;
+    width: 405px;
+}
+
+div.all-uslugs{
+    display: block;
+    position: relative;
+    background-color: rgba(243, 246, 249, 1);
+    border-radius: 45px;
+    width: 100%;
+    padding: 100px 0 40px 0;
+    margin-top: 50px;
+}
+
+#uslug-roz{
+    display: none;
+}
+#uslug-slezh{
+    display: none;
+}
+#uslug-business{
+    display: none;
+}
+
 .button-font {
     color: var(--light-blue-color);
     font-size: 1.5rem;
@@ -189,34 +261,101 @@ ul {
     font-weight: 900;
     background-color: rgba(33, 56, 135, 0.06);
     border-radius: 50px;
-    border-color: var(--blue-color);
+    border-color: var(--gray-color);
     margin: auto;
 }
 
-.button-font-nonebox {
+.text-button{
+    display: block;
+    position: relative;
     color: var(--light-blue-color);
     font-size: 1.5rem;
-    width: 400px;
     font-weight: 900;
-    background-color: rgba(33, 56, 135, 0.06);
-    border: none;
-    border-radius: 15px;
+    padding: 30px 30px;
     text-align: left;
-    padding: 20px 30px;
-    margin-top: 40px;
-    box-shadow: 0px 7px 5px 0px var(--gray-color);
+}
+
+.text-button-box{
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 30px 30px;
+    text-align: left;
+}
+
+.div-button{
+    display: block;
+    position: relative;
+    width: 400px;
+    background-color: rgba(33, 56, 135, 0.06);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    top: -200px;
+}
+
+.div-button-2{
+    display: block;
+    position: relative;
+    width: 400px;
+    background-color: rgba(33, 56, 135, 0.06);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    top: 40px;
+    margin-bottom: 40px;
+}
+
+.div-button-uslug{
+    display: block;
+    position: relative;
+    width: 400px;
+    background-color: var(--blue-color);
+    border-radius: 15px;
+}
+
+.button-font-nonebox-1{
+    position: absolute;
+    right: 0;
+    top: 6px;
+    background-image: url(/Images/Plus-blue.png);
+    width: 65px;
+    height: 65px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    background-color: rgba(30, 56, 135, 0);
+}
+
+.button-font-nonebox-2{
+    position: absolute;
+    right: 0;
+    top: 6px;
+    background-image: url(/Images/Plus-blue.png);
+    width: 65px;
+    height: 65px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    background-color: rgba(30, 56, 135, 0);
 }
 
 .button-font-box {
-    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    background-image: url(/Images/Plus-white.png);
+    width: 65px;
     height: 65px;
-    width: 400px;
-    text-align: left;
-    padding: 10px 30px;
-    background-color: var(--blue-color);
     border: none;
-    border-radius: 15px;
-    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    background-color:  var(--blue-color) 0;
 }
 
 .button-settings {
@@ -232,7 +371,7 @@ ul {
 
 .text-uslugi {
     line-height: 2;
-    padding: 30px;
+    padding: 10px;
 }
 
 
@@ -293,8 +432,19 @@ ul {
 .text-agreement {
     color: var(--gray-color);
     display: block;
-    text-align: center;
     padding: 40px;
+}
+
+label p{
+    margin-left: auto;
+    margin-right: auto;
+    background: url(/Images/Checkbox_gray.svg) no-repeat center;
+    background-position: 470px;
+}
+
+label input:checked ~ p{
+    background: url(/Images/Checkbox_blue.svg) no-repeat left center;
+    background-position: 470px;
 }
 
 .inp {
@@ -312,6 +462,10 @@ ul {
     width: 400px;
     padding: 10px 30px;
     width: 100%;
+}
+
+input[name="email"]::-webkit-input-placeholder{
+    color: var(--blue-color);
 }
 
 .confidience {
