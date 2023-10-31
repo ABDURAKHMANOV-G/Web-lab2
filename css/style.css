@@ -195,7 +195,7 @@ div.uslugi{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    width: 60%;
+    width: 450px;
 }
 
 .uslugs-image-1{
@@ -435,18 +435,19 @@ div.all-uslugs{
     padding: 40px;
 }
 
-label p{
+/*
+label{
     margin-left: auto;
     margin-right: auto;
     background: url(/Images/Checkbox_gray.svg) no-repeat center;
     background-position: 470px;
 }
 
-label input:checked ~ p{
+label input:checked ~ label{
     background: url(/Images/Checkbox_blue.svg) no-repeat left center;
     background-position: 470px;
 }
-
+*/
 .inp {
     font-size: 3rem;
     background: transparent;
