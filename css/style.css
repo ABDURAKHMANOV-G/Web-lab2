@@ -121,12 +121,15 @@ div.client {
     background-color: white;
     border-radius: 15px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 div.container-blocks {
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 div.container1 {
@@ -152,7 +155,7 @@ div.container2 {
     top: 0;
     right: 0;
     padding: 5px;
-    width: 45px;
+    width: 55px;
 }
 
 #second {
@@ -160,7 +163,7 @@ div.container2 {
     top: 0;
     right: 0;
     padding: 5px;
-    width: 45px;
+    width: 55px;
 }
 
 #third {
@@ -168,7 +171,7 @@ div.container2 {
     top: 0;
     right: 0;
     padding: 5px;
-    width: 45px;
+    width: 55px;
 }
 
 #fourth {
@@ -176,7 +179,7 @@ div.container2 {
     top: 0;
     right: 0;
     padding: 5px;
-    width: 45px;
+    width: 55px;
 }
 
 ul {
@@ -208,7 +211,7 @@ ul {
 
 .text-p-cl {
     color: var(--gray-color);
-    font-size: 0.99rem;
+    font-size: 1.4rem;
     font-weight: 900;
     text-align: left;
     margin-top: 5.5em;
