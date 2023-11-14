@@ -498,7 +498,6 @@ input[name="email"]::-webkit-input-placeholder {
 }
 
 .design {
-
     color: var(--light-blue-color);
 }
 
@@ -512,4 +511,8 @@ input[name="email"]::-webkit-input-placeholder {
     padding: 10px;
     justify-content: space-between;
     width: 100%;
+}
+
+.grid{
+    color: var(--light-blue-color);
 }
