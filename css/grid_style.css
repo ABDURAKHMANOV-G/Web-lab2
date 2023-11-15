@@ -64,6 +64,18 @@
     place-items: center;
 }
 
+.button{
+    display: grid;
+    place-items: center;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
 
 .button-1 {
     display: grid;
