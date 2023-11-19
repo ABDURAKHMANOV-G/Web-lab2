@@ -22,6 +22,18 @@ html {
     --light-blue-color: rgba(33, 56, 135, 1);
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 body {
     font-family: 'Mulish', sans-serif;
@@ -48,10 +60,9 @@ h2 {
 
 h3 {
     display: block;
-    padding: 20px 20px 20px 0;
+    margin: 20px 20px 20px 0;
     text-align: left;
     font-size: 2rem;
-    margin: auto;
     max-width: 600px;
 }
 
@@ -65,6 +76,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 0 10px 10px;
+
 }
 
 section {
@@ -81,11 +93,16 @@ section {
 hr {
     color: var(--gray-color);
     margin: 1em;
+
 }
 
 .sect1 {
+    display: block;
+    flex-direction: column;
     padding-bottom: 3em;
+    
 }
+
 
 .bg-sect1 {
     display: block;
@@ -127,19 +144,17 @@ div.client {
 }
 
 div.container-blocks {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
     padding-bottom: 10px;
 }
 
-div.container1 {
-    position: relative;
-    width: 40%;
-}
 
-div.container2 {
-    position: relative;
-    width: 40%;
+
+.client{
+    width: 70%;
 }
 
 #right-bottom-img {
@@ -274,11 +289,11 @@ div.uslugi {
     position: relative;
     background-color: rgba(243, 246, 249, 1);
     border-radius: 25px;
-    padding: 40px;
+    padding: 30px 0px 30px 80px;
 }
 
 .uslugs-image-4 img {
-    width: 100%;
+    width: 50%;
 }
 
 div.all-uslugs {

@@ -17,14 +17,14 @@
     <header>
         <a href="#" target="_blank"><img class="logo" src="/Images/Logotip.svg" alt=""> </a>
         <button class="button-settings"> <img src="/Images/Settings.png" alt=""> </button>
-        <nav>
-            <a class="main-nav" href="#">Главный</a>
-            <a class="main-nav" href="#">О нас</a>
-            <a class="main-nav" href="#">Услуги</a>
-            <a class="main-nav" href="#">Как мы работаем</a>
-            <a class="main-nav" href="#">Клиенты</a>
-            <a class="main-nav" href="#">Контакты</a>
-        </nav>
+        <label class="sr-only">
+            <a href="#">Главный</a>
+            <a href="#">О нас</a>
+            <a href="#">Услуги</a>
+            <a href="#">Как мы работаем</a>
+            <a href="#">Клиенты</a>
+            <a href="#">Контакты</a>
+        </label>
     </header>
     <hr>
     <main>
@@ -41,7 +41,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="sect">
             <div class="all-uslugs">
                 <h2>Услуги</h2>
                 <p class="text-p-head">Когда другие бессильны - мы делаем</p>
@@ -144,7 +144,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="sect">
             <h2>Как мы работаем</h2>
             <div class="spisok">
                 <ol>
@@ -166,40 +166,39 @@
                 </ol>
             </div>
         </section>
-        <section>
+        <section class="sect">
             <div class="all-clients">
-                <h2>Наши клиенты</h2>
-                <p class="text-p-head">Строго соблюдаем конфиденциальность и дорожим репутацией каждого клиента</p>
+                <h2 class="Our_Clients">Наши клиенты</h2>
+                <p class="text-p-head" id="Our_Clients_p">Строго соблюдаем конфиденциальность и дорожим репутацией
+                    каждого клиента</p>
                 <img id="right-bottom-img" src="/Images/Our_Clients_right-bottom.png" alt="">
                 <div class="container-blocks">
-                    <div class="container1">
-                        <div class="client">
+                  
+                        <div class="client" id="client1">
                             <p class="text-p-cl">Политики</p>
                             <img id="first" src="/Images/Politics.svg" alt="">
-                            
+
                         </div>
-                        <div class="client">
+                        <div class="client" id="client2">
                             <p class="text-p-cl">Селебрити</p>
                             <img id="third" src="/Images/Celebrity.svg" alt="">
-                            
+
                         </div>
-                    </div>
-                    <div class="container2">
-                        <div class="client">
+                    
+                        <div class="client" id="client3">
                             <p class="text-p-cl">Бизнес</p>
                             <img id="second" src="/Images/Business.svg" alt="">
-                           
+
                         </div>
-                        <div class="client">
+                        <div class="client" id="client4">
                             <p class="text-p-cl">Частные лица</p>
                             <img id="fourth" src="/Images/People.svg" alt="">
-                            
+
                         </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="sect">
             <h2>Связаться с нами</h2>
             <form>
                 <div>
@@ -211,7 +210,7 @@
                     <p class="text-button">Оформить заявку</p>
                     <button class="button-font-nonebox-1"></button>
                 </div>
-                <label class="text-agreement"> <input  type="checkbox" name="Agreement">Согласие на обработку
+                <label class="text-agreement"> <input type="checkbox" name="Agreement">Согласие на обработку
                     персональных
                     данных</label>
 
