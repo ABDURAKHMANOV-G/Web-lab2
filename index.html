@@ -15,16 +15,21 @@
 
 <body>
     <header>
+
         <a href="#" target="_blank"><img class="logo" src="/Images/Logotip.svg" alt=""> </a>
+        <div class="hede-href-displ">
+            <a class="head-href sr-only" href="#">Главный</a>
+            <a class="head-href sr-only" href="#">О нас</a>
+            <a class="head-href sr-only" href="#">Услуги</a>
+            <a class="head-href sr-only" href="#">Как мы работаем</a>
+            <a class="head-href sr-only" href="#">Клиенты</a>
+            <a class="head-href sr-only" href="#">Контакты</a>
+        </div>
         <button class="button-settings"> <img src="/Images/Settings.png" alt=""> </button>
-        <label class="sr-only">
-            <a href="#">Главный</a>
-            <a href="#">О нас</a>
-            <a href="#">Услуги</a>
-            <a href="#">Как мы работаем</a>
-            <a href="#">Клиенты</a>
-            <a href="#">Контакты</a>
-        </label>
+        <div class="div-button-set">
+            <p class="text-button-set">Оформить заявку</p>
+            <button class="button-font-nonebox-1-set"></button>
+        </div>
     </header>
     <hr>
     <main>
@@ -35,10 +40,19 @@
             </h1>
             <p class="text-p-head">Владеешь информацией - владеешь миром</p>
             <img class="bg-sect1" src="/Images/BG_Sect1.svg" alt="">
+            <img class="bg-sect1-PC" src="/Images/BG_Sect1_PC.svg" alt="">
             <div class="div-button">
                 <p class="text-button">Оформить заявку</p>
                 <button class="button-font-nonebox-1"></button>
             </div>
+                <button class="arrow"></button>
+            <div class="whatsapp">
+                <img src="/Images/WhatsApp.svg" alt="">
+                <a href="#" class="chat">открыть чат</a>
+                <hr class="whatsapp-hr">
+                <a href="#" class="email">adrasteia@mail.com</a>
+            </div>
+
         </section>
 
         <section class="sect">
@@ -52,12 +66,12 @@
                     <button class="button-font">
                         Розыск
                     </button>
-                    <!--<button class="button-font">
+                    <button class="button-font slezh">
                         Слежка и наблюдение
                     </button>
-                    <button class="button-font">
+                    <button class="button-font razved">
                         Бизнес разведка
-                    </button>-->
+                    </button>
                 </div>
 
                 <ul>
@@ -173,28 +187,28 @@
                     каждого клиента</p>
                 <img id="right-bottom-img" src="/Images/Our_Clients_right-bottom.png" alt="">
                 <div class="container-blocks">
-                  
-                        <div class="client" id="client1">
-                            <p class="text-p-cl">Политики</p>
-                            <img id="first" src="/Images/Politics.svg" alt="">
 
-                        </div>
-                        <div class="client" id="client2">
-                            <p class="text-p-cl">Селебрити</p>
-                            <img id="third" src="/Images/Celebrity.svg" alt="">
+                    <div class="client" id="client1">
+                        <p class="text-p-cl">Политики</p>
+                        <img id="first" src="/Images/Politics.svg" alt="">
 
-                        </div>
-                    
-                        <div class="client" id="client3">
-                            <p class="text-p-cl">Бизнес</p>
-                            <img id="second" src="/Images/Business.svg" alt="">
+                    </div>
+                    <div class="client" id="client2">
+                        <p class="text-p-cl">Селебрити</p>
+                        <img id="third" src="/Images/Celebrity.svg" alt="">
 
-                        </div>
-                        <div class="client" id="client4">
-                            <p class="text-p-cl">Частные лица</p>
-                            <img id="fourth" src="/Images/People.svg" alt="">
+                    </div>
 
-                        </div>
+                    <div class="client" id="client3">
+                        <p class="text-p-cl">Бизнес</p>
+                        <img id="second" src="/Images/Business.svg" alt="">
+
+                    </div>
+                    <div class="client" id="client4">
+                        <p class="text-p-cl">Частные лица</p>
+                        <img id="fourth" src="/Images/People.svg" alt="">
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -212,8 +226,8 @@
                 </div>
                 <label class="text-agreement"> <input type="checkbox" name="Agreement">Согласие на обработку
                     персональных
-                    данных</label>
-
+                    данных
+                </label>
             </form>
         </section>
     </main>
@@ -221,9 +235,8 @@
     <footer>
         <div class="footer">
             <a class="confidience" href="#">Политика конфиденциальности</a>
-            <a class="design" href="#">Дизайн и разработка - Karanikola</a>
+            <a class="design" href="grid.html">Дизайн и разработка - Karanikola</a>
             <a class="text-2023">©2023</a>
-            <a class="grid" href="grid.html">Grid</a>
         </div>
     </footer>
 </body>

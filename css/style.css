@@ -18,22 +18,8 @@ html {
     font-size: 62.5%;
     --gray-color: #afb4c4;
     --blue-color: rgba(20, 34, 81, 1);
-
     --light-blue-color: rgba(33, 56, 135, 1);
 }
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
 
 body {
     font-family: 'Mulish', sans-serif;
@@ -45,7 +31,6 @@ h1 {
     max-width: 600px;
     padding-left: 10px;
     text-align: left;
-    margin: auto;
     line-height: 1;
 }
 
@@ -66,17 +51,16 @@ h3 {
     max-width: 600px;
 }
 
-
 footer {
     padding: 20px 0 20px 0;
     text-align: left;
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     justify-content: space-between;
     padding: 10px 0 10px 10px;
-
 }
 
 section {
@@ -84,123 +68,45 @@ section {
     width: 100%;
 }
 
-
-.logo {
-    position: relative;
-    width: 7em;
-}
-
 hr {
     color: var(--gray-color);
-    margin: 1em;
+    margin: 0.5em;
 
 }
-
-.sect1 {
-    display: block;
-    flex-direction: column;
-    padding-bottom: 3em;
-    
-}
-
-
-.bg-sect1 {
-    display: block;
-    position: relative;
-    width: 100%;
-    top: -80px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.text-uslugi li {
-    list-style-type: none; /* Убираем маркеры у списка */
-   }
-   .text-uslugi li:before {
-    content: "- "; /* Добавляем в качестве маркера символ */
-   }
 
 ol {
     padding: 2em;
-}
-
-div.all-clients {
-    display: block;
-    position: relative;
-    background-color: rgba(243, 246, 249, 1);
-    border-radius: 45px;
-    width: 100%;
-}
-
-div.client {
-    display: block;
-    position: relative;
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-div.container-blocks {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    place-items: center;
-    padding-bottom: 10px;
-}
-
-
-
-.client{
-    width: 70%;
-}
-
-#right-bottom-img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    z-index: 0;
-}
-
-#first {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    width: 55px;
-}
-
-#second {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    width: 55px;
-}
-
-#third {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    width: 55px;
-}
-
-#fourth {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    width: 55px;
 }
 
 ul {
     list-style-type: none;
 }
 
+.logo {
+    position: relative;
+    width: 7em;
+}
+
+.button-settings {
+    display: inline-block;
+    background-color: white;
+    width: 40%;
+    border: none;
+    margin-left: auto;
+    grid-area: 1/3/1/3;
+}
+
+.button-settings img {
+    width: 50%;
+}
+
+
+.sect1 {
+    display: block;
+    flex-direction: column;
+    padding-bottom: 3em;
+
+}
 
 .blue-text {
     font-size: 3.5rem;
@@ -224,14 +130,69 @@ ul {
     width: 90%;
 }
 
-.text-p-cl {
-    color: var(--gray-color);
-    font-size: 1.4rem;
-    font-weight: 900;
-    text-align: left;
-    margin-top: 5.5em;
-
+.bg-sect1 {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: -80px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.div-button {
+    display: flex;
+    background-color: rgba(33, 56, 135, 0.06);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0px 6px 5px 1px #afb4c4;
+}
+
+
+.text-button {
+    color: var(--light-blue-color);
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 20px;
+    margin-right: auto;
+}
+
+.button-font-nonebox-1 {
+    background-image: url(/Images/Plus-blue.png);
+    width: 20%;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: rgba(30, 56, 135, 0);
+}
+
+div.all-uslugs {
+    display: block;
+    position: relative;
+    background-color: rgba(243, 246, 249, 1);
+    border-radius: 45px;
+    width: 100%;
+    padding: 0px 0 40px 0;
+}
+
+.uslug-buttons {
+    display: flex;
+    width: 100%;
+}
+
+.button-font {
+    color: var(--light-blue-color);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    font-weight: 900;
+    background-color: rgba(33, 56, 135, 0.06);
+    border-radius: 50px;
+    margin: auto;
+    border: 1px solid var(--gray-color);
+}
+
 
 div.uslugi {
     display: block;
@@ -258,7 +219,21 @@ div.uslugi {
     width: 100%;
 }
 
-/*макеев катсомные чекбоксы*/
+.text-uslugi li {
+    list-style-type: none;
+    /* Убираем маркеры у списка */
+}
+
+.text-uslugi li:before {
+    content: "- ";
+    /* Добавляем в качестве маркера символ */
+}
+
+.text-uslugi {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 
 .uslugs-image-2 {
     display: block;
@@ -296,47 +271,12 @@ div.uslugi {
     width: 50%;
 }
 
-div.all-uslugs {
-    display: block;
-    position: relative;
-    background-color: rgba(243, 246, 249, 1);
-    border-radius: 45px;
+.div-button-uslug {
+    display: flex;
     width: 100%;
-    padding: 0px 0 40px 0;
-}
-
-/*
-#uslug-roz{
-    display: none;
-}
-#uslug-slezh{
-    display: none;
-}
-#uslug-business{
-    display: none;
-}
-*/
-
-.uslug-buttons{
-    width: 100%;
-}
-
-.button-font {
-    color: var(--light-blue-color);
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    font-weight: 900;
-    background-color: rgba(33, 56, 135, 0.06);
-    border-radius: 50px;
-    margin: auto;
-    border: 1px solid var(--gray-color);
-}
-
-.text-button {
-    color: var(--light-blue-color);
-    font-size: 1rem;
-    font-weight: 900;
-    padding: 20px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -348,46 +288,6 @@ div.all-uslugs {
     margin-right: auto;
 }
 
-.div-button {
-    display: flex;
-    background-color: rgba(33, 56, 135, 0.06);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    width: 90%;
-    box-shadow: 0px 6px 5px 1px #afb4c4;
-}
-
-.div-button-2 {
-    display: flex;
-    background-color: rgba(33, 56, 135, 0.06);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    width: 90%;
-    box-shadow: 0px 6px 5px 1px #afb4c4;
-    margin-top: 20px;
-}
-
-.div-button-uslug {
-    display: flex;
-    width: 100%;
-    background-color: var(--blue-color);
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.button-font-nonebox-1 {
-    background-image: url(/Images/Plus-blue.png);
-    width: 20%;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    background-color: rgba(30, 56, 135, 0);
-}
-
 .button-font-box {
     background-image: url(/Images/Plus-white.png);
     width: 20%;
@@ -396,34 +296,6 @@ div.all-uslugs {
     background-position: center;
     background-size: 50%;
     background-color: var(--blue-color) 0;
-}
-
-.button-settings {
-    display: inline-block;
-    background-color: white;
-    width: 10%;
-    border: none;
-    margin-left: auto;
-}
-
-.button-settings img {
-    width: 50%;
-}
-
-.text-uslugi {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-
-.main-nav {
-    font-weight: 600;
-    padding: 5px;
-    color: var(--light-blue-color);
-    font-size: 2rem;
-    text-decoration: none;
-    display: none;
 }
 
 .spisok li {
@@ -438,12 +310,8 @@ div.all-uslugs {
     margin-bottom: 20px;
 }
 
-.how-work-number {
-    position: relative;
-    color: var(--gray-color);
-    font-size: 1.2rem;
-    left: 7%;
-    top: -15px;
+.how-work-images {
+    width: 30%;
 }
 
 .how-work-text {
@@ -454,11 +322,113 @@ div.all-uslugs {
     font-weight: 600;
 }
 
-.how-work-images {
-    width: 30%;
+.how-work-number {
+    position: relative;
+    color: var(--gray-color);
+    font-size: 1.2rem;
+    left: 7%;
+    top: -15px;
 }
 
+div.all-clients {
+    display: block;
+    position: relative;
+    background-color: rgba(243, 246, 249, 1);
+    border-radius: 45px;
+    width: 100%;
+}
 
+#right-bottom-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 0;
+}
+
+div.container-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    padding-bottom: 10px;
+}
+
+div.client {
+    display: block;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.client {
+    width: 70%;
+}
+
+.text-p-cl {
+    color: var(--gray-color);
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-align: left;
+    margin-top: 5.5em;
+
+}
+
+#first {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    width: 55px;
+}
+
+#second {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    width: 55px;
+}
+
+#third {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    width: 55px;
+}
+
+#fourth {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    width: 55px;
+}
+
+.inp {
+    font-size: 1.7rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #444;
+    width: 95%;
+    margin-top: 30px;
+}
+
+.div-button-2 {
+    display: flex;
+    background-color: rgba(33, 56, 135, 0.06);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0px 6px 5px 1px #afb4c4;
+    margin-top: 20px;
+}
 
 .text-agreement {
     display: block;
@@ -469,26 +439,26 @@ div.all-uslugs {
     width: 50%;
 }
 
-/*
-label{
-    margin-left: auto;
-    margin-right: auto;
-    background: url(/Images/Checkbox_gray.svg) no-repeat center;
-    background-position: 470px;
+.footer {
+    display: flex;
+    font-size: 0.6em;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
 }
 
-label input:checked ~ label{
-    background: url(/Images/Checkbox_blue.svg) no-repeat left center;
-    background-position: 470px;
+.confidience {
+    color: var(--gray-color);
 }
-*/
-.inp {
-    font-size: 1.7rem;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #444;
-    width: 95%;
-    margin-top: 30px;
+
+.design {
+    color: var(--light-blue-color);
+}
+
+.text-2023 {
+    position: static;
+    right: auto;
+    color: var(--gray-color);
 }
 
 .form {
@@ -502,32 +472,206 @@ input[name="email"]::-webkit-input-placeholder {
     color: var(--blue-color);
 }
 
-.confidience {
-    color: var(--gray-color);
+
+@media (max-width: 320px) {
+    #uslug-roz{
+        display: none;
+    }
+    #uslug-slezh{
+        display: none;
+    }
+    #uslug-business{
+        display: none;
+    }
+
+    .slezh {
+        display: none;
+    }
+
+    .razved {
+        display: none;
+    }
+
+    .bg-sect1-PC {
+        display: none;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .div-button-set {
+        display: none;
+    }
+
+
+    .div-arrow{
+     display: none;   
+    }
+
+    .whatsapp{
+        display: none;
+    }
+
 }
 
-.text-2023 {
-    position: static;
-    right: auto;
-    color: var(--gray-color);
-}
+@media (min-width:330px) {
+    .logo {
+        width: 12em;
+        justify-content: start;
+    }
 
-.design {
-    color: var(--light-blue-color);
-}
+    .head-href {
+        grid-area: 1/ 2/ 1/2;
+        color: var(--blue-color);
+        margin-left: 2em;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
 
-.text-p {
-    color: var(--gray-color);
-}
+    .div-button-set {
+        display: flex;
+        background-color: none;
+        border-radius: 10px;
+        justify-content: end;
+    }
 
-.footer {
-    display: flex;
-    font-size: 0.6em;
-    padding: 10px;
-    justify-content: space-between;
-    width: 100%;
-}
+    .button-font-nonebox-1-set {
+        background-image: url(/Images/Plus-blue.png);
+        width: 50px;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: rgba(30, 56, 135, 0);
+    }
 
-.grid{
-    color: var(--light-blue-color);
+    .text-button-set {
+        color: var(--light-blue-color);
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding: 10px;
+    }
+
+    .button-settings {
+        display: none;
+    }
+
+    hr {
+        margin: 1em 0 2em 0;
+    }
+
+    .blue-text {
+        font-size: 7rem;
+    }
+
+    .gray-text {
+        font-size: 7rem;
+    }
+
+    .text-p-head {
+        font-size: 2.4rem;
+        padding-left: 45px;
+    }
+
+    .bg-sect1 {
+        display: none;
+    }
+
+    header {
+        padding: 20px 10px 0 10px;
+    }
+
+    .sect1 {
+        text-align: left;
+    }
+
+    h1 {
+        padding-left: 52px;
+    }
+
+    .bg-sect1-PC {
+        position: relative;
+        width: 80%;
+        left: 20em;
+        top: -28em;
+    }
+
+    .div-button {
+        position: relative;
+        top: -52em;
+        width: 330px;
+        margin-left: 4em;
+        box-shadow: none;
+    }
+
+    .button-font-nonebox-1 {
+        width: 90px;
+    }
+
+    .text-button {
+        font-size: 2rem;
+        padding: 30px;
+    }
+
+    .arrow{
+        display: flex;
+        background-image: url("/Images/arrow.svg");
+        background-color: rgba(33, 56, 135, 0.06);
+        border-radius: 50px;
+        width: 3%;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px;
+        border: none;
+        margin-left: 60px;
+    }
+ 
+
+    .whatsapp{
+        display: flex;
+        width: 320px;
+        background-color: rgba(33, 56, 135, 0.06);
+        border-radius: 50px;
+        margin-left: auto;
+    }
+
+    .whatsapp img{
+        width: 25px;
+        margin: 5px 5px 5px 20px;
+    }
+
+    .chat{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--blue-color);
+        text-decoration: none;
+        margin-top: 22px;
+    }
+    
+    .whatsapp-hr{
+        width: 0.2px;
+        height: 30px;
+        margin: 15px;
+        color: var(--gray-color);
+    }
+
+    .email{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--light-blue-color);
+        margin-top: 22px;
+    }
+
+
 }
