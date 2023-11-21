@@ -45,7 +45,7 @@
                 <p class="text-button">Оформить заявку</p>
                 <button class="button-font-nonebox-1"></button>
             </div>
-                <button class="arrow"></button>
+            <button class="arrow"></button>
             <div class="whatsapp">
                 <img src="/Images/WhatsApp.svg" alt="">
                 <a href="#" class="chat">открыть чат</a>
@@ -55,10 +55,22 @@
 
         </section>
 
-        <section class="sect">
+        <section class="sect-uslugi">
             <div class="all-uslugs">
-                <h2>Услуги</h2>
-                <p class="text-p-head">Когда другие бессильны - мы делаем</p>
+                <div class="uslugi-header">
+                    <h2>Услуги</h2>
+                    <p class="text-p-head uslug-text">Когда другие бессильны - мы делаем</p>
+                    <div class="left-right-button">
+                        <button>
+                            <img src="/Images/arrow-left.svg" alt="">
+                        </button>
+                        <hr class="lr-hr">
+                        <button>
+                            <img src="/Images/arrow-right.svg" alt="">
+                        </button>
+
+                    </div>
+                </div>
                 <div class="uslug-buttons">
                     <button class="button-font">
                         Работа с информацией
@@ -73,8 +85,7 @@
                         Бизнес разведка
                     </button>
                 </div>
-
-                <ul>
+                <ul class="uslugi-ul">
                     <li>
                         <div class="uslugi" id="uslug-inf">
                             <div class="uslugs-image-1">
@@ -154,31 +165,42 @@
                             </div>
                         </div>
                     </li>
+                    <li>
+                        <div>
+                            <img class="zaglushka-uslugi" src="/Images/Заглушка_Услуги.png" alt="">
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
 
-        <section class="sect">
-            <h2>Как мы работаем</h2>
-            <div class="spisok">
-                <ol>
-                    <li>
-                        <img class="how-work-images" src="/Images/Situation.svg" alt="">
-                        <p class="how-work-text">Разбираемся в ситуации</p>
-                        <p class="how-work-number">01</p>
-                    </li>
-                    <li>
-                        <img class="how-work-images" src="/Images/Actions.svg" alt="">
-                        <p class="how-work-text">Составляем план действий</p>
-                        <p class="how-work-number">02</p>
-                    </li>
-                    <li>
-                        <img class="how-work-images" src="/Images/Result.svg" alt="">
-                        <p class="how-work-text">Предоставляем результат</p>
-                        <p class="how-work-number">03</p>
-                    </li>
-                </ol>
+        <section class="sect-how-work">
+            <div class="Pc-how-work">
+                <h2>Как мы работаем</h2>
+                <div class="spisok">
+                    <ol>
+                        <li>
+                            <img class="how-work-images" src="/Images/Situation.svg" alt="">
+                            <img class="how-work-images-Pc" src="/Images/arrow-right-howwork.svg" alt="">
+                            <p class="how-work-text">Разбираемся в ситуации</p>
+                            <p class="how-work-number">01</p>
+                        </li>
+                        <li>
+                            <img class="how-work-images" src="/Images/Actions.svg" alt="">
+                            <img class="how-work-images-Pc" src="/Images/clipboard-check.svg" alt="">
+                            <p class="how-work-text">Составляем план действий</p>
+                            <p class="how-work-number">02</p>
+                        </li>
+                        <li>
+                            <img class="how-work-images" src="/Images/Result.svg" alt="">
+                            <img class="how-work-images-Pc" src="/Images/attachment.svg" alt="">
+                            <p class="how-work-text">Предоставляем результат</p>
+                            <p class="how-work-number">03</p>
+                        </li>
+                    </ol>
+                </div>
             </div>
+            <img class="bg-sect-how-work" src="/Images/How-wrok-BG.svg" alt="">
         </section>
         <section class="sect">
             <div class="all-clients">
@@ -186,12 +208,11 @@
                 <p class="text-p-head" id="Our_Clients_p">Строго соблюдаем конфиденциальность и дорожим репутацией
                     каждого клиента</p>
                 <img id="right-bottom-img" src="/Images/Our_Clients_right-bottom.png" alt="">
+                <img class="right-bottom-img-Pc" src="/Images/graphic.svg" alt="">
                 <div class="container-blocks">
-
                     <div class="client" id="client1">
                         <p class="text-p-cl">Политики</p>
                         <img id="first" src="/Images/Politics.svg" alt="">
-
                     </div>
                     <div class="client" id="client2">
                         <p class="text-p-cl">Селебрити</p>

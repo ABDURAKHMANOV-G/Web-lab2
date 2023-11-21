@@ -40,7 +40,6 @@ h2 {
     padding: 20px 0 0 20px;
     text-align: left;
     font-size: 4rem;
-    margin: auto;
 }
 
 h3 {
@@ -75,7 +74,7 @@ hr {
 }
 
 ol {
-    padding: 2em;
+    margin: 2em;
 }
 
 ul {
@@ -198,7 +197,7 @@ div.uslugi {
     display: block;
     background-color: white;
     border-radius: 45px;
-    padding: 10px 25px 30px 25px;
+    padding: 10px 10px 30px 10px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -210,7 +209,7 @@ div.uslugi {
     display: block;
     text-align: center;
     background-color: rgba(243, 246, 249, 1);
-    border-radius: 25px;
+    border-radius: 45px;
     padding: 30px 0 20px 35px;
     overflow: hidden;
 }
@@ -235,45 +234,9 @@ div.uslugi {
     margin-bottom: 20px;
 }
 
-.uslugs-image-2 {
-    display: block;
-    position: relative;
-    background-color: rgba(243, 246, 249, 1);
-    border-radius: 25px;
-    padding: 0px 20px 0px 5px;
-}
-
-.uslugs-image-2 img {
-    width: 100%;
-}
-
-.uslugs-image-3 {
-    display: block;
-    position: relative;
-    background-color: rgba(243, 246, 249, 1);
-    border-radius: 25px;
-    padding: 40px;
-}
-
-.uslugs-image-3 img {
-    width: 100%;
-}
-
-.uslugs-image-4 {
-    display: block;
-    position: relative;
-    background-color: rgba(243, 246, 249, 1);
-    border-radius: 25px;
-    padding: 30px 0px 30px 80px;
-}
-
-.uslugs-image-4 img {
-    width: 50%;
-}
-
 .div-button-uslug {
     display: flex;
-    width: 100%;
+    width: 90%;
     background-color: var(--blue-color);
     border-radius: 10px;
     margin-left: auto;
@@ -361,12 +324,11 @@ div.client {
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .client {
-    width: 70%;
+    width: 80%;
+    height: 90%;
 }
 
 .text-p-cl {
@@ -474,6 +436,10 @@ input[name="email"]::-webkit-input-placeholder {
 
 
 @media (max-width: 320px) {
+    h2{
+        margin: auto;
+    }
+
     #uslug-roz{
         display: none;
     }
@@ -522,9 +488,32 @@ input[name="email"]::-webkit-input-placeholder {
         display: none;
     }
 
+    .left-right-button{
+        display: none;
+    }
+
+    .zaglushka-uslugi{
+        display: none;
+    }
+
+    .how-work-images-Pc{
+        display: none;
+    }
+
+    .bg-sect-how-work{
+        display: none;
+    }
+
+    .right-bottom-img-Pc{
+        display: none;
+    }
+
 }
 
-@media (min-width:330px) {
+@media (min-width:321px) {
+
+    /* Первая секция */
+
     .logo {
         width: 12em;
         justify-content: start;
@@ -567,7 +556,7 @@ input[name="email"]::-webkit-input-placeholder {
         display: none;
     }
 
-    hr {
+    .whatsapp-hr {
         margin: 1em 0 2em 0;
     }
 
@@ -582,6 +571,7 @@ input[name="email"]::-webkit-input-placeholder {
     .text-p-head {
         font-size: 2.4rem;
         padding-left: 45px;
+        grid-area: 2/1/2/1;
     }
 
     .bg-sect1 {
@@ -593,6 +583,13 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .sect1 {
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4fr 1fr 2fr 5fr;
+
+
         text-align: left;
     }
 
@@ -601,18 +598,16 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .bg-sect1-PC {
-        position: relative;
-        width: 80%;
-        left: 20em;
-        top: -28em;
+        width: 100%;
+        grid-area: 1/2/3/2;
     }
 
     .div-button {
-        position: relative;
-        top: -52em;
+    
         width: 330px;
         margin-left: 4em;
         box-shadow: none;
+        grid-area: 3/1/3/1;
     }
 
     .button-font-nonebox-1 {
@@ -635,6 +630,7 @@ input[name="email"]::-webkit-input-placeholder {
         padding: 30px;
         border: none;
         margin-left: 60px;
+        grid-area: 4/1/4/1;
     }
  
 
@@ -644,6 +640,7 @@ input[name="email"]::-webkit-input-placeholder {
         background-color: rgba(33, 56, 135, 0.06);
         border-radius: 50px;
         margin-left: auto;
+        grid-area: 4/2/4/2;
     }
 
     .whatsapp img{
@@ -673,5 +670,246 @@ input[name="email"]::-webkit-input-placeholder {
         margin-top: 22px;
     }
 
+    /* Секция Усулги */
+
+    h2{
+        font-size: 6rem;
+        text-align: left;
+    }
+
+    .sect-uslugi{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .uslug-buttons{
+        display: none;
+    }
+
+    .uslugi-header{
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 50px 0 50px 0;
+    }
+
+    .left-right-button{
+        display: flex;
+        background-color: white;
+        border-radius: 80px;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .lr-hr{
+        position: relative;
+        width: 0.2px;
+        height: 25px;
+        top: 3px;
+    }
+
+    .left-right-button button{
+        border: none;
+        background-color: white;
+        border-radius: 80px;
+        padding: 0 15px 0 15px;
+    }
+
+    .left-right-button button img{
+        width: 25px;
+    }
+
+    .uslug-text{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+    }
+
+    .uslugi-ul{
+        display: flex;
+    }
+
+    .zaglushka-uslugi{
+        height: 400px;
+        position: relative;
+        top: 30px;
+        margin-right: 3px;
+    }
+
+    #uslug-inf .div-button-uslug{
+        display: none;
+    }
+
+    #uslug-slezh .div-button-uslug{
+        display: none;
+    }
+
+    #uslug-business .div-button-uslug{
+        display: none;
+    }
+
+    div.uslugi{
+        height: 450px;
+    }
+
+    h3{
+        font-size: 3rem;
+        margin: 20px;
+    }
+
+    .uslugs-image-2 {
+        display: block;
+        background-color: rgba(243, 246, 249, 1);
+        border-radius: 45px;
+        padding: 0px 20px 0px 5px;
+    }
+    
+    .uslugs-image-2 img {
+        width: 100%;
+    }
+    
+    .uslugs-image-3 {
+        display: block;
+        background-color: rgba(243, 246, 249, 1);
+        border-radius: 45px;
+        padding: 40px 90px 40px 90px;
+    }
+    
+    .uslugs-image-3 img {
+        width: 100%;
+    }
+    
+    .uslugs-image-4 {
+        display: block;
+        background-color: rgba(243, 246, 249, 1);
+        border-radius: 45px;
+        padding: 10px 80px 10px 80px;
+        width: 100%;
+    }
+    
+    .uslugs-image-4 img {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sect-how-work{
+        display: flex;
+        margin-top: 250px;
+        margin-bottom: 100px;
+    }
+
+    .how-work-images{
+        display: none;
+    }
+    
+    .spisok li {
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 0 0.5em 0;
+        height: 160px;
+        border-radius: 20px;
+    }
+
+    .bg-sect-how-work{
+        width: 70%;
+        margin-top: 50px;
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    .how-work-text{
+        grid-area: 2 / 1 / -1 / -1;
+        margin-left: 0;
+        color: rgba(152, 158, 177, 1);
+        font-size: 2.4rem;
+        font-weight: normal;
+    }
+
+    .how-work-number{
+        grid-area: 1 / 2 / 1 / 2;
+        left: 50%;
+        top: -10px;
+        font-size: 1.7rem;
+    }
+
+    .Pc-how-work{
+        display: block;
+        width: 30%;
+        margin-left: 32px;
+    }
+
+    ol{
+        margin: 2em  0 0 1em;
+    }
+
+    /* Наши клиенты */
+
+    div.all-clients{
+        display: grid;
+        grid-template-columns: 2fr 1fr 3fr 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+        border-radius: 0;
+    }
+
+    .Our_Clients{
+        grid-area: 1 / 1 / 1 / 1;
+        margin-left: 32px;
+    }
+
+    .container-blocks{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        grid-area: 1 / 3 / -1 / 3;
+    }
+
+    #Our_Clients_p{
+        grid-area: 1 / 5 / 1 / 5;
+        margin-right: 52px;
+        margin-top: 40px;
+    }
+
+    .client{
+        height: 90%;
+        width: 90%;
+    }
+
+    #first{
+        padding: 10px;
+        width: 80px;
+    }
+
+    #second {
+        padding: 10px;
+        width: 80px;
+    }
+
+    #third {
+        padding: 10px;
+        width: 80px;
+    }
+
+    #fourth {
+        padding: 10px;
+        width: 80px;
+    }
+
+    .text-p-cl{
+        font-size: 2rem;
+        font-weight: normal;
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+
+    #right-bottom-img{
+        display: none;
+    }
+
+    .right-bottom-img-Pc{
+        display: none;
+    }
 
 }
