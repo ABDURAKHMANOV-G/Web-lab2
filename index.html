@@ -15,7 +15,6 @@
 
 <body>
     <header>
-
         <a href="#" target="_blank"><img class="logo" src="/Images/Logotip.svg" alt=""> </a>
         <nav class="hede-href-displ">
             <a class="head-href sr-only" href="#">Главный</a>
@@ -34,25 +33,32 @@
     <hr>
     <main>
         <section class="sect1">
-            <h1>
-                <span class="blue-text">Детективно-информационное</span>
-                <span class="gray-text">агентство</span>
-            </h1>
-            <p class="text-p-head">Владеешь информацией - владеешь миром</p>
+            <div>
+                <h1>
+                    <span class="blue-text">Детективно-информационное</span>
+                    <span class="gray-text">агентство</span>
+                </h1>
+                <p class="text-p-head">Владеешь информацией - владеешь миром</p>
+                <div class="div-button-Pc">
+                    <p class="text-button-Pc">Оформить заявку</p>
+                    <button class="button-font-nonebox-1-Pc"></button>
+                </div>
+            </div>
             <img class="bg-sect1" src="/Images/BG_Sect1.svg" alt="">
             <img class="bg-sect1-PC" src="/Images/BG_Sect1_PC.svg" alt="">
             <div class="div-button">
                 <p class="text-button">Оформить заявку</p>
                 <button class="button-font-nonebox-1"></button>
             </div>
-            <button class="arrow"></button>
-            <div class="whatsapp">
-                <img src="/Images/WhatsApp.svg" alt="">
-                <a href="#" class="chat">открыть чат</a>
-                <hr class="whatsapp-hr">
-                <a href="#" class="email">adrasteia@mail.com</a>
+            <div class="bottom-of-sect1">
+                <button class="arrow"></button>
+                <div class="whatsapp">
+                    <img src="/Images/WhatsApp.svg" alt="">
+                    <a href="#" class="chat">открыть чат</a>
+                    <hr class="whatsapp-hr">
+                    <a href="#" class="email">adrasteia@mail.com</a>
+                </div>
             </div>
-
         </section>
 
         <section class="sect-uslugi">
@@ -208,7 +214,6 @@
                 <p class="text-p-head" id="Our_Clients_p">Строго соблюдаем конфиденциальность и дорожим репутацией
                     каждого клиента</p>
                 <img id="right-bottom-img" src="/Images/Our_Clients_right-bottom.png" alt="">
-                <img class="right-bottom-img-Pc" src="/Images/graphic.svg" alt="">
                 <div class="container-blocks">
                     <div class="client" id="client1">
                         <p class="text-p-cl">Политики</p>
@@ -217,13 +222,11 @@
                     <div class="client" id="client2">
                         <p class="text-p-cl">Селебрити</p>
                         <img id="third" src="/Images/Celebrity.svg" alt="">
-
                     </div>
 
                     <div class="client" id="client3">
                         <p class="text-p-cl">Бизнес</p>
                         <img id="second" src="/Images/Business.svg" alt="">
-
                     </div>
                     <div class="client" id="client4">
                         <p class="text-p-cl">Частные лица</p>
@@ -245,9 +248,10 @@
                     <p class="text-button">Оформить заявку</p>
                     <button class="button-font-nonebox-1"></button>
                 </div>
-                <label class="text-agreement"> <input type="checkbox" name="Agreement">Согласие на обработку
-                    персональных
-                    данных
+                <label class="text-agreement">
+                    <input type="checkbox" name="Agreement" class="real-checkbox">
+                    <span class="custom-checkbox"></span>
+                    Согласие на обработку персональных данных
                 </label>
             </form>
         </section>

@@ -298,7 +298,7 @@ div.all-clients {
     position: relative;
     background-color: rgba(243, 246, 249, 1);
     border-radius: 45px;
-    width: 100%;
+    width: 100%;    
 }
 
 #right-bottom-img {
@@ -372,7 +372,7 @@ div.client {
     width: 55px;
 }
 
-.inp {
+input {
     font-size: 1.7rem;
     background: transparent;
     border: none;
@@ -393,13 +393,46 @@ div.client {
 }
 
 .text-agreement {
-    display: block;
+    display: flex;
     text-align: left;
     font-size: 0.7em;
     color: var(--gray-color);
-    margin: 15px;
+    margin: 20px;
+    margin-right: auto;
     width: 50%;
 }
+
+.real-checkbox{
+    display: none;
+}
+
+.custom-checkbox{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-right: 25px;
+    margin-top: 4px;
+    background-image: url(/Images/Checkbox_gray.svg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+}
+
+.custom-checkbox::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-right: 25px;
+    background-image: url(/Images/Checkbox_blue.svg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    transform: scale(0);
+}
+
+.real-checkbox:checked + .custom-checkbox::before{
+    transform: scale(1);
+}
+
 
 .footer {
     display: flex;
@@ -438,6 +471,10 @@ input[name="email"]::-webkit-input-placeholder {
 @media (max-width: 400px) {
     h2{
         margin: auto;
+    }
+
+    .div-button-Pc{
+        display: none;
     }
 
     .hede-href-displ{
@@ -587,13 +624,7 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .sect1 {
-
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4fr 1fr 2fr 5fr;
-
-
+        display: flex;
         text-align: left;
     }
 
@@ -601,26 +632,44 @@ input[name="email"]::-webkit-input-placeholder {
         padding-left: 52px;
     }
 
-    .bg-sect1-PC {
-        width: 100%;
-        grid-area: 1/2/3/2;
+    .div-button{
+        display: none;
     }
 
-    .div-button {
-    
+    .bg-sect1-PC {
+        position: absolute;
+        width: 80%;
+        right: 0;
+        top: -20px;
+    }
+
+    .div-button-Pc {
         width: 330px;
         margin-left: 4em;
         box-shadow: none;
-        grid-area: 3/1/3/1;
+        display: flex;
+        background-color: rgba(33, 56, 135, 0.06);
+        margin-right: auto;
+        border-radius: 10px;
+        margin-top: 60px;
     }
 
-    .button-font-nonebox-1 {
+    .button-font-nonebox-1-Pc {
         width: 90px;
+        background-image: url(/Images/Plus-blue.png);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: rgba(30, 56, 135, 0);
     }
 
-    .text-button {
+    .text-button-Pc {
         font-size: 2rem;
         padding: 30px;
+        color: var(--light-blue-color);
+        font-weight: 900;
+        margin-right: auto;
     }
 
     .arrow{
@@ -634,17 +683,14 @@ input[name="email"]::-webkit-input-placeholder {
         padding: 30px;
         border: none;
         margin-left: 60px;
-        grid-area: 4/1/4/1;
     }
- 
 
     .whatsapp{
         display: flex;
         width: 320px;
         background-color: rgba(33, 56, 135, 0.06);
         border-radius: 50px;
-        margin-left: auto;
-        grid-area: 4/2/4/2;
+        margin-right: 60px;
     }
 
     .whatsapp img{
@@ -673,6 +719,13 @@ input[name="email"]::-webkit-input-placeholder {
         color: var(--light-blue-color);
         margin-top: 22px;
     }
+
+    .bottom-of-sect1{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 300px;
+    }
+
 
     /* Секция Усулги */
 
@@ -854,9 +907,13 @@ input[name="email"]::-webkit-input-placeholder {
 
     div.all-clients{
         display: grid;
-        grid-template-columns: 2fr 1fr 3fr 1fr 2fr;
+        grid-template-columns: 2fr 0fr 3fr 0fr 2fr;
         grid-template-rows: 1fr 2fr;
         border-radius: 0;
+        background-image: url(/Images/graphic.svg);
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: right 0 bottom 0;
     }
 
     .Our_Clients{
@@ -865,8 +922,8 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .container-blocks{
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         grid-area: 1 / 3 / -1 / 3;
     }
 
@@ -877,34 +934,35 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .client{
-        height: 90%;
-        width: 90%;
+        height: 95%;
+        width: 95%;
+        margin-top: 50px;
     }
 
     #first{
         padding: 10px;
-        width: 80px;
+        width: 100px;
     }
 
     #second {
         padding: 10px;
-        width: 80px;
+        width: 100px;
     }
 
     #third {
         padding: 10px;
-        width: 80px;
+        width: 100px;
     }
 
     #fourth {
         padding: 10px;
-        width: 80px;
+        width: 100px;
     }
 
     .text-p-cl{
         font-size: 2rem;
         font-weight: normal;
-        margin-top: 150px;
+        margin-top: 240px;
         margin-left: 10px;
     }
 
@@ -912,8 +970,21 @@ input[name="email"]::-webkit-input-placeholder {
         display: none;
     }
 
-    .right-bottom-img-Pc{
-        display: none;
+    /* Связаться с нами */
+ 
+    .text-agreement{
+        font-size: 1.5rem;
+        width: 20%;
     }
+
+    .custom-checkbox{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+
+
+
+
 
 }
