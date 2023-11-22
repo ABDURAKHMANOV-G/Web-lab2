@@ -573,7 +573,7 @@ input[name="email"]::-webkit-input-placeholder {
     }
 }
 
-@media (min-width:500px) {
+@media (min-width:510px) {
 
     /* Первая секция */
 
