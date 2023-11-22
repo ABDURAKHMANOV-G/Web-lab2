@@ -440,6 +440,10 @@ input[name="email"]::-webkit-input-placeholder {
         margin: auto;
     }
 
+    .hede-href-displ{
+        display: none;
+    }
+
     #uslug-roz{
         display: none;
     }
