@@ -435,7 +435,7 @@ input[name="email"]::-webkit-input-placeholder {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     h2{
         margin: auto;
     }
@@ -510,7 +510,7 @@ input[name="email"]::-webkit-input-placeholder {
 
 }
 
-@media (min-width:321px) {
+@media (min-width:400px) {
 
     /* Первая секция */
 
