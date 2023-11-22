@@ -14,15 +14,15 @@
 </head>
 
 <body>
-    <header>
+    <header id="start">
         <a href="#" target="_blank"><img class="logo" src="/Images/Logotip.svg" alt=""> </a>
         <nav class="hede-href-displ">
-            <a class="head-href sr-only" href="#">Главный</a>
-            <a class="head-href sr-only" href="#">О нас</a>
-            <a class="head-href sr-only" href="#">Услуги</a>
-            <a class="head-href sr-only" href="#">Как мы работаем</a>
-            <a class="head-href sr-only" href="#">Клиенты</a>
-            <a class="head-href sr-only" href="#">Контакты</a>
+            <a class="head-href" href="index.html">Главный</a>
+            <a class="head-href" href="#Glavn">О нас</a>
+            <a class="head-href" href="#Uslugi">Услуги</a>
+            <a class="head-href" href="#How-work">Как мы работаем</a>
+            <a class="head-href" href="#Clients">Клиенты</a>
+            <a class="head-href" href="#Contact">Контакты</a>
         </nav>
         <button class="button-settings"> <img src="/Images/Settings.png" alt=""> </button>
         <div class="div-button-set">
@@ -32,7 +32,7 @@
     </header>
     <hr>
     <main>
-        <section class="sect1">
+        <section class="sect1" id="Glavn">
             <div>
                 <h1>
                     <span class="blue-text">Детективно-информационное</span>
@@ -45,13 +45,16 @@
                 </div>
             </div>
             <img class="bg-sect1" src="/Images/BG_Sect1.svg" alt="">
-            <img class="bg-sect1-PC" src="/Images/BG_Sect1_PC.svg" alt="">
+           
             <div class="div-button">
                 <p class="text-button">Оформить заявку</p>
                 <button class="button-font-nonebox-1"></button>
             </div>
             <div class="bottom-of-sect1">
-                <button class="arrow"></button>
+                <nav>
+                    <a class="arrow" href="#end"></a>
+                </nav>
+                
                 <div class="whatsapp">
                     <img src="/Images/WhatsApp.svg" alt="">
                     <a href="#" class="chat">открыть чат</a>
@@ -61,7 +64,7 @@
             </div>
         </section>
 
-        <section class="sect-uslugi">
+        <section class="sect-uslugi" id="Uslugi">
             <div class="all-uslugs">
                 <div class="uslugi-header">
                     <h2>Услуги</h2>
@@ -180,7 +183,7 @@
             </div>
         </section>
 
-        <section class="sect-how-work">
+        <section class="sect-how-work" id="How-work">
             <div class="Pc-how-work">
                 <h2>Как мы работаем</h2>
                 <div class="spisok">
@@ -208,7 +211,7 @@
             </div>
             <img class="bg-sect-how-work" src="/Images/How-wrok-BG.svg" alt="">
         </section>
-        <section class="sect">
+        <section class="sect" id="Clients">
             <div class="all-clients">
                 <h2 class="Our_Clients">Наши клиенты</h2>
                 <p class="text-p-head" id="Our_Clients_p">Строго соблюдаем конфиденциальность и дорожим репутацией
@@ -236,17 +239,31 @@
                 </div>
             </div>
         </section>
-        <section class="sect">
-            <h2>Связаться с нами</h2>
-            <form>
-                <div>
-                    <input class="inp" placeholder="Меня зовут" name="name" required>
-                    <input class="inp" placeholder="example@gmail.com" name="email" type="email" required>
-                    <input class="inp" placeholder="Мой номер" name="number" required>
+        <section class="sect" id="Contact">
+            <nav class="div-arrow-up">
+                <h2>Связаться с нами</h2>
+                <a class="arrow-up" href="#start"></a>
+            </nav>
+            <form class="forma-grid">
+                <div class="inp1">
+                    <p>Меня зовут</p>
+                    <input placeholder="Караникола Евгений" name="name" required>
+                </div>
+                <div class="inp2">
+                    <p>Мой email</p>
+                    <input placeholder="example@gmail.com" name="email" type="email" required>
+                </div>
+                <div class="inp3">
+                    <p>Мой номер</p>
+                    <input placeholder="+7 (___) ___-____." name="number" required>
                 </div>
                 <div class="div-button-2">
                     <p class="text-button">Оформить заявку</p>
                     <button class="button-font-nonebox-1"></button>
+                </div>
+                <div class="div-button-2-Pc">
+                    <p class="text-button-Pc-2">Оформить заявку</p>
+                    <button class="button-font-nonebox-1-Pc-2"></button>
                 </div>
                 <label class="text-agreement">
                     <input type="checkbox" name="Agreement" class="real-checkbox">
@@ -257,8 +274,15 @@
         </section>
     </main>
     <hr>
-    <footer>
+    <footer id="end">
         <div class="footer">
+            <div class="contact-with-us">
+                <a href="#" class="chat-footer"><img src="/Images/WhatsApp-footer.svg" alt=""></a>
+                <hr class="whatsapp-hr">
+                <a href="#"class="tg"><img src="/Images/Telegram-footer.svg" alt=""></a>
+                <hr class="whatsapp-hr">
+                <a href="#" class="email-footer">adrasteia@mail.com</a>
+            </div>
             <a class="confidience" href="#">Политика конфиденциальности</a>
             <a class="design" href="grid.html">Дизайн и разработка - Karanikola</a>
             <a class="text-2023">©2023</a>

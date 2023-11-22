@@ -58,7 +58,7 @@ footer {
 header {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    justify-content: space-between;
+    align-items: center;
     padding: 10px 0 10px 10px;
 }
 
@@ -104,7 +104,10 @@ ul {
     display: block;
     flex-direction: column;
     padding-bottom: 3em;
-
+    background-image: url(/Images/BG_Sect1_PC.svg);
+    background-size: 85%;
+    background-position: 100% 120%;
+    background-repeat: no-repeat;
 }
 
 .blue-text {
@@ -549,6 +552,29 @@ input[name="email"]::-webkit-input-placeholder {
         display: none;
     }
 
+    .inp1 p{
+        display: none;
+    }
+
+    .inp2 p{
+        display: none;
+    }
+
+    .inp3 p{
+        display: none;
+    }
+
+    .div-button-2-Pc{
+        display: none;
+    }
+
+    .arrow-up{
+        display: none;
+    }
+    
+    .contact-with-us{
+        display: none;
+    }
 }
 
 @media (min-width:400px) {
@@ -558,6 +584,11 @@ input[name="email"]::-webkit-input-placeholder {
     .logo {
         width: 12em;
         justify-content: start;
+    }
+
+    .hede-href-displ{
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .head-href {
@@ -665,7 +696,7 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .text-button-Pc {
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding: 30px;
         color: var(--light-blue-color);
         font-weight: 900;
@@ -972,9 +1003,132 @@ input[name="email"]::-webkit-input-placeholder {
 
     /* Связаться с нами */
  
+    .div-arrow-up{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .arrow-up{
+        display: flex;
+        background-image: url("/Images/arrow-up.svg");
+        background-color: rgba(33, 56, 135, 0.06);
+        background-size: 50%;
+        border-radius: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        margin-right: 60px;
+        align-self: center;
+    }
+
+    .forma-grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 30px;
+        margin-bottom: 70px;
+        gap: 60px;
+    }
+
+    .div-button-2-Pc{
+        display: flex;
+        grid-area: 2 / 3 / 2 / 3;
+        width: 300px;
+        background-color: rgba(33, 56, 135, 0.06);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .button-font-nonebox-1-Pc-2 {
+        width: 90px;
+        background-image: url(/Images/Plus-blue.png);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+        background-color: rgba(30, 56, 135, 0);
+    }
+
+    .text-button-Pc-2 {
+        font-size: 1.7rem;
+        padding: 20px;
+        color: var(--light-blue-color);
+        font-weight: 900;
+        margin-right: auto;
+    }
+
+    .div-button-2{
+        display: none;
+    }
+
     .text-agreement{
         font-size: 1.5rem;
-        width: 20%;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 0;
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    input{
+        margin-left: 30px;
+    }
+
+    input[name="email"]::-webkit-input-placeholder {
+        color: var(--gray-color);
+        font-size: 2.3rem;
+    }
+
+    input[name="name"]::-webkit-input-placeholder {
+        color: var(--gray-color);
+        font-size: 2.3rem;
+    }
+    input[name="number"]::-webkit-input-placeholder {
+        color: var(--gray-color);
+        font-size: 2.3rem;
+    }
+
+    .inp1{
+        display: flex;
+    }
+
+    .inp2{
+        display: flex;
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    .inp3{
+        display: flex;
+        grid-area: 1 / 2 / 1 / 4;
+    }
+
+    .inp1 p{
+        font-size: 2.3rem;
+        color: var(--blue-color);
+        align-self: center;
+        width: 40%;
+        padding-top: 25px;
+        margin-left: 30px;
+    }
+
+    .inp2 p{
+        font-size: 2.3rem;
+        color: var(--blue-color);
+        align-self: center;
+        width: 35%;
+        padding-top: 25px;
+        margin-left: 30px;
+    }
+
+    .inp3 p{
+        font-size: 2.3rem;
+        color: var(--blue-color);
+        align-self: center;
+        width: 30%;
+        padding-top: 25px;
+        margin-left: 30px;
     }
 
     .custom-checkbox{
@@ -982,9 +1136,48 @@ input[name="email"]::-webkit-input-placeholder {
         margin-right: 10px;
     }
 
+    .contact-with-us{
+        display: flex;
+        width: 500px;
+        border: 1px solid var(--gray-color);
+        border-radius: 50px;
+        margin-left: 20px;
+        font-size: 2.5rem;
+        align-items: center;
+    }
 
+    .contact-with-us img{
+        width: 100px;
+    }
 
+    .chat-footer{
+        width: 150px;
+        padding-left: 25px;
+    }
 
+    .email-footer{
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--light-blue-color);
+        padding-right: 25px;
+        align-self: center;
+    }
 
+    .footer{
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .confidience{
+        font-size: 1.7rem;
+    }
+
+    .design{
+        font-size: 1.7rem;
+    }
+
+    .text-2023{
+        font-size: 1.7rem;
+    }
 
 }
