@@ -104,10 +104,6 @@ ul {
     display: block;
     flex-direction: column;
     padding-bottom: 3em;
-    background-image: url(/Images/BG_Sect1_PC.svg);
-    background-size: 85%;
-    background-position: 100% 120%;
-    background-repeat: no-repeat;
 }
 
 .blue-text {
@@ -471,7 +467,7 @@ input[name="email"]::-webkit-input-placeholder {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     h2{
         margin: auto;
     }
@@ -577,7 +573,7 @@ input[name="email"]::-webkit-input-placeholder {
     }
 }
 
-@media (min-width:400px) {
+@media (min-width:500px) {
 
     /* Первая секция */
 
@@ -657,6 +653,10 @@ input[name="email"]::-webkit-input-placeholder {
     .sect1 {
         display: flex;
         text-align: left;
+        background-image: url(/Images/BG_Sect1_PC.svg);
+        background-size: 85%;
+        background-position: 100% 120%;
+        background-repeat: no-repeat;
     }
 
     h1 {
