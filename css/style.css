@@ -253,11 +253,12 @@ div.uslugi {
 .button-font-box {
     background-image: url(/Images/Plus-white.png);
     width: 20%;
+    border-radius: 20px;
     border: none;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
-    background-color: var(--blue-color) 0;
+    background-color: var(--blue-color);
 }
 
 .spisok li {
@@ -297,7 +298,7 @@ div.all-clients {
     position: relative;
     background-color: rgba(243, 246, 249, 1);
     border-radius: 45px;
-    width: 100%;    
+    width: 100%;
 }
 
 #right-bottom-img {
@@ -401,11 +402,11 @@ input {
     width: 50%;
 }
 
-.real-checkbox{
+.real-checkbox {
     display: none;
 }
 
-.custom-checkbox{
+.custom-checkbox {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -416,7 +417,7 @@ input {
     background-size: 65%;
 }
 
-.custom-checkbox::before{
+.custom-checkbox::before {
     content: '';
     display: inline-block;
     width: 20px;
@@ -428,7 +429,7 @@ input {
     transform: scale(0);
 }
 
-.real-checkbox:checked + .custom-checkbox::before{
+.real-checkbox:checked+.custom-checkbox::before {
     transform: scale(1);
 }
 
@@ -468,33 +469,35 @@ input[name="email"]::-webkit-input-placeholder {
 
 
 @media (max-width: 1050px) {
-    body{
+    body {
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
         max-width: 340px;
         min-width: 320px;
     }
-    
-    h2{
+
+    h2 {
         margin: auto;
     }
 
-    .div-button-Pc{
+    .div-button-Pc {
         display: none;
     }
 
-    .hede-href-displ{
+    .hede-href-displ {
         display: none;
     }
 
-    #uslug-roz{
+    #uslug-roz {
         display: none;
     }
-    #uslug-slezh{
+
+    #uslug-slezh {
         display: none;
     }
-    #uslug-business{
+
+    #uslug-business {
         display: none;
     }
 
@@ -528,60 +531,60 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
 
-    .div-arrow{
-     display: none;   
-    }
-
-    .whatsapp{
+    .div-arrow {
         display: none;
     }
 
-    .left-right-button{
+    .whatsapp {
         display: none;
     }
 
-    .zaglushka-uslugi{
+    .left-right-button {
         display: none;
     }
 
-    .how-work-images-Pc{
+    .zaglushka-uslugi {
         display: none;
     }
 
-    .bg-sect-how-work{
+    .how-work-images-Pc {
         display: none;
     }
 
-    .right-bottom-img-Pc{
+    .bg-sect-how-work {
         display: none;
     }
 
-    .inp1 p{
+    .right-bottom-img-Pc {
         display: none;
     }
 
-    .inp2 p{
+    .inp1 p {
         display: none;
     }
 
-    .inp3 p{
+    .inp2 p {
         display: none;
     }
 
-    .div-button-2-Pc{
+    .inp3 p {
         display: none;
     }
 
-    .arrow-up{
+    .div-button-2-Pc {
         display: none;
     }
-    
-    .contact-with-us{
+
+    .arrow-up {
+        display: none;
+    }
+
+    .contact-with-us {
         display: none;
     }
 }
 
-@media (min-width:1050px) {
+@media (min-width:1050px) and (max-width:1550px) {
 
     /* Первая секция */
 
@@ -590,7 +593,7 @@ input[name="email"]::-webkit-input-placeholder {
         justify-content: start;
     }
 
-    .hede-href-displ{
+    .hede-href-displ {
         margin-right: auto;
         margin-left: auto;
     }
@@ -606,7 +609,6 @@ input[name="email"]::-webkit-input-placeholder {
 
     .div-button-set {
         display: flex;
-        background-color: none;
         border-radius: 10px;
         justify-content: end;
     }
@@ -671,7 +673,7 @@ input[name="email"]::-webkit-input-placeholder {
         padding-left: 52px;
     }
 
-    .div-button{
+    .div-button {
         display: none;
     }
 
@@ -711,7 +713,7 @@ input[name="email"]::-webkit-input-placeholder {
         margin-right: auto;
     }
 
-    .arrow{
+    .arrow {
         display: flex;
         background-image: url("/Images/arrow.svg");
         background-color: rgba(33, 56, 135, 0.06);
@@ -724,7 +726,7 @@ input[name="email"]::-webkit-input-placeholder {
         margin-left: 60px;
     }
 
-    .whatsapp{
+    .whatsapp {
         display: flex;
         width: 320px;
         background-color: rgba(33, 56, 135, 0.06);
@@ -732,34 +734,34 @@ input[name="email"]::-webkit-input-placeholder {
         margin-right: 60px;
     }
 
-    .whatsapp img{
+    .whatsapp img {
         width: 25px;
         margin: 5px 5px 5px 20px;
     }
 
-    .chat{
+    .chat {
         font-size: 1.5rem;
         font-weight: 700;
         color: var(--blue-color);
         text-decoration: none;
         margin-top: 22px;
     }
-    
-    .whatsapp-hr{
+
+    .whatsapp-hr {
         width: 0.2px;
         height: 30px;
         margin: 15px;
         color: var(--gray-color);
     }
 
-    .email{
+    .email {
         font-size: 1.5rem;
         font-weight: 700;
         color: var(--light-blue-color);
         margin-top: 22px;
     }
 
-    .bottom-of-sect1{
+    .bottom-of-sect1 {
         display: flex;
         justify-content: space-between;
         margin-top: 300px;
@@ -768,29 +770,29 @@ input[name="email"]::-webkit-input-placeholder {
 
     /* Секция Усулги */
 
-    h2{
+    h2 {
         font-size: 6rem;
         text-align: left;
     }
 
-    .sect-uslugi{
+    .sect-uslugi {
         width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .uslug-buttons{
+    .uslug-buttons {
         display: none;
     }
 
-    .uslugi-header{
+    .uslugi-header {
         display: flex;
         margin-left: 50px;
         margin-right: 50px;
         padding: 50px 0 50px 0;
     }
 
-    .left-right-button{
+    .left-right-button {
         display: flex;
         background-color: white;
         border-radius: 80px;
@@ -798,59 +800,59 @@ input[name="email"]::-webkit-input-placeholder {
         margin: 20px;
     }
 
-    .lr-hr{
+    .lr-hr {
         position: relative;
         width: 0.2px;
         height: 25px;
         top: 3px;
     }
 
-    .left-right-button button{
+    .left-right-button button {
         border: none;
         background-color: white;
         border-radius: 80px;
         padding: 0 15px 0 15px;
     }
 
-    .left-right-button button img{
+    .left-right-button button img {
         width: 25px;
     }
 
-    .uslug-text{
+    .uslug-text {
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
         width: 320px;
     }
 
-    .uslugi-ul{
+    .uslugi-ul {
         display: flex;
     }
 
-    .zaglushka-uslugi{
+    .zaglushka-uslugi {
         height: 400px;
         position: relative;
         top: 30px;
         margin-right: 3px;
     }
 
-    #uslug-inf .div-button-uslug{
+    #uslug-inf .div-button-uslug {
         display: none;
     }
 
-    #uslug-slezh .div-button-uslug{
+    #uslug-slezh .div-button-uslug {
         display: none;
     }
 
-    #uslug-business .div-button-uslug{
+    #uslug-business .div-button-uslug {
         display: none;
     }
 
-    div.uslugi{
+    div.uslugi {
         height: 450px;
     }
 
-    h3{
+    h3 {
         font-size: 3rem;
         margin: 20px;
     }
@@ -861,22 +863,22 @@ input[name="email"]::-webkit-input-placeholder {
         border-radius: 45px;
         padding: 0px 20px 0px 5px;
     }
-    
+
     .uslugs-image-2 img {
         width: 100%;
     }
-    
+
     .uslugs-image-3 {
         display: block;
         background-color: rgba(243, 246, 249, 1);
         border-radius: 45px;
         padding: 40px 90px 40px 90px;
     }
-    
+
     .uslugs-image-3 img {
         width: 100%;
     }
-    
+
     .uslugs-image-4 {
         display: block;
         background-color: rgba(243, 246, 249, 1);
@@ -884,23 +886,23 @@ input[name="email"]::-webkit-input-placeholder {
         padding: 10px 80px 10px 80px;
         width: 100%;
     }
-    
+
     .uslugs-image-4 img {
         width: 100%;
         margin-right: auto;
         margin-left: auto;
     }
 
-    .sect-how-work{
+    .sect-how-work {
         display: flex;
         margin-top: 250px;
         margin-bottom: 100px;
     }
 
-    .how-work-images{
+    .how-work-images {
         display: none;
     }
-    
+
     .spisok li {
         display: grid;
         grid-template-columns: 7fr 1fr;
@@ -911,13 +913,13 @@ input[name="email"]::-webkit-input-placeholder {
         border-radius: 20px;
     }
 
-    .bg-sect-how-work{
+    .bg-sect-how-work {
         width: 70%;
         margin-top: 50px;
         grid-area: 1 / 1 / 1 / 1;
     }
 
-    .how-work-text{
+    .how-work-text {
         grid-area: 2 / 1 / -1 / -1;
         margin-left: 0;
         color: rgba(152, 158, 177, 1);
@@ -925,26 +927,26 @@ input[name="email"]::-webkit-input-placeholder {
         font-weight: normal;
     }
 
-    .how-work-number{
+    .how-work-number {
         grid-area: 1 / 2 / 1 / 2;
         left: 50%;
         top: -10px;
         font-size: 1.7rem;
     }
 
-    .Pc-how-work{
+    .Pc-how-work {
         display: block;
         width: 30%;
         margin-left: 32px;
     }
 
-    ol{
-        margin: 2em  0 0 1em;
+    ol {
+        margin: 2em 0 0 1em;
     }
 
     /* Наши клиенты */
 
-    div.all-clients{
+    div.all-clients {
         display: grid;
         grid-template-columns: 2fr 0fr 3fr 0fr 2fr;
         grid-template-rows: 1fr 2fr;
@@ -955,30 +957,30 @@ input[name="email"]::-webkit-input-placeholder {
         background-position: right 0 bottom 0;
     }
 
-    .Our_Clients{
+    .Our_Clients {
         grid-area: 1 / 1 / 1 / 1;
         margin-left: 32px;
     }
 
-    .container-blocks{
+    .container-blocks {
         margin-top: 40px;
         margin-bottom: 40px;
         grid-area: 1 / 3 / -1 / 3;
     }
 
-    #Our_Clients_p{
+    #Our_Clients_p {
         grid-area: 1 / 5 / 1 / 5;
         margin-right: 52px;
         margin-top: 40px;
     }
 
-    .client{
+    .client {
         height: 95%;
         width: 95%;
         margin-top: 50px;
     }
 
-    #first{
+    #first {
         padding: 10px;
         width: 100px;
     }
@@ -998,26 +1000,26 @@ input[name="email"]::-webkit-input-placeholder {
         width: 100px;
     }
 
-    .text-p-cl{
+    .text-p-cl {
         font-size: 2rem;
         font-weight: normal;
         margin-top: 240px;
         margin-left: 10px;
     }
 
-    #right-bottom-img{
+    #right-bottom-img {
         display: none;
     }
 
     /* Связаться с нами */
- 
-    .div-arrow-up{
+
+    .div-arrow-up {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
     }
 
-    .arrow-up{
+    .arrow-up {
         display: flex;
         background-image: url("/Images/arrow-up.svg");
         background-color: rgba(33, 56, 135, 0.06);
@@ -1032,7 +1034,7 @@ input[name="email"]::-webkit-input-placeholder {
         align-self: center;
     }
 
-    .forma-grid{
+    .forma-grid {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -1041,7 +1043,7 @@ input[name="email"]::-webkit-input-placeholder {
         gap: 60px;
     }
 
-    .div-button-2-Pc{
+    .div-button-2-Pc {
         display: flex;
         grid-area: 2 / 3 / 2 / 3;
         width: 300px;
@@ -1068,11 +1070,11 @@ input[name="email"]::-webkit-input-placeholder {
         margin-right: auto;
     }
 
-    .div-button-2{
+    .div-button-2 {
         display: none;
     }
 
-    .text-agreement{
+    .text-agreement {
         font-size: 1.5rem;
         width: 100%;
         margin-top: 30px;
@@ -1080,7 +1082,7 @@ input[name="email"]::-webkit-input-placeholder {
         grid-area: 2 / 2 / 2 / 2;
     }
 
-    input{
+    input {
         margin-left: 30px;
     }
 
@@ -1093,26 +1095,27 @@ input[name="email"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 2.3rem;
     }
+
     input[name="number"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 2.3rem;
     }
 
-    .inp1{
+    .inp1 {
         display: flex;
     }
 
-    .inp2{
+    .inp2 {
         display: flex;
         grid-area: 2 / 1 / 2 / 1;
     }
 
-    .inp3{
+    .inp3 {
         display: flex;
         grid-area: 1 / 2 / 1 / 4;
     }
 
-    .inp1 p{
+    .inp1 p {
         font-size: 2.3rem;
         color: var(--blue-color);
         align-self: center;
@@ -1121,7 +1124,7 @@ input[name="email"]::-webkit-input-placeholder {
         margin-left: 30px;
     }
 
-    .inp2 p{
+    .inp2 p {
         font-size: 2.3rem;
         color: var(--blue-color);
         align-self: center;
@@ -1130,7 +1133,7 @@ input[name="email"]::-webkit-input-placeholder {
         margin-left: 30px;
     }
 
-    .inp3 p{
+    .inp3 p {
         font-size: 2.3rem;
         color: var(--blue-color);
         align-self: center;
@@ -1139,12 +1142,12 @@ input[name="email"]::-webkit-input-placeholder {
         margin-left: 30px;
     }
 
-    .custom-checkbox{
+    .custom-checkbox {
         margin-top: 10px;
         margin-right: 10px;
     }
 
-    .contact-with-us{
+    .contact-with-us {
         display: flex;
         width: 500px;
         border: 1px solid var(--gray-color);
@@ -1154,16 +1157,16 @@ input[name="email"]::-webkit-input-placeholder {
         align-items: center;
     }
 
-    .contact-with-us img{
+    .contact-with-us img {
         width: 100px;
     }
 
-    .chat-footer{
+    .chat-footer {
         width: 150px;
         padding-left: 25px;
     }
 
-    .email-footer{
+    .email-footer {
         font-size: 1.8rem;
         font-weight: 600;
         color: var(--light-blue-color);
@@ -1171,21 +1174,657 @@ input[name="email"]::-webkit-input-placeholder {
         align-self: center;
     }
 
-    .footer{
+    .footer {
         align-items: center;
         padding-bottom: 30px;
     }
 
-    .confidience{
+    .confidience {
         font-size: 1.7rem;
     }
 
-    .design{
+    .design {
         font-size: 1.7rem;
     }
 
-    .text-2023{
+    .text-2023 {
         font-size: 1.7rem;
     }
+}
+
+@media (min-width:1550px) {
+    /* Первая секция */
+
+    .logo {
+        width: 15em;
+        justify-content: start;
+        margin: 20px;
+    }
+
+    .hede-href-displ {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .head-href {
+        grid-area: 1/ 2/ 1/2;
+        color: var(--blue-color);
+        margin-left: 2em;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .div-button-set {
+        display: flex;
+        justify-content: end;
+    }
+
+    .button-font-nonebox-1-set {
+        background-image: url(/Images/Plus-blue.png);
+        width: 80px;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: rgba(30, 56, 135, 0);
+        background-position: 5%;
+    }
+
+    .text-button-set {
+        color: var(--light-blue-color);
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 10px;
+    }
+
+    .button-settings {
+        display: none;
+    }
+
+    .whatsapp-hr {
+        margin: 1em 0 2em 0;
+    }
+
+    .blue-text {
+        font-size: 10rem;
+    }
+
+    .gray-text {
+        font-size: 10rem;
+    }
+
+    .text-p-head {
+        font-size: 2.4rem;
+        padding-left: 45px;
+        grid-area: 2/1/2/1;
+    }
+
+    .bg-sect1 {
+        display: none;
+    }
+
+    header {
+        padding: 20px 10px 0 10px;
+    }
+
+    .sect1 {
+        display: flex;
+        text-align: left;
+        background-image: url(/Images/BG_Sect1_PC.svg);
+        background-size: 70%;
+        background-position: 100% 120%;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        padding-left: 52px;
+    }
+
+    .div-button {
+        display: none;
+    }
+
+    .bg-sect1-PC {
+        position: absolute;
+        width: 80%;
+        right: 0;
+        top: -20px;
+    }
+
+    .div-button-Pc {
+        width: 360px;
+        margin-left: 4em;
+        box-shadow: none;
+        display: flex;
+        background-color: rgba(33, 56, 135, 0.06);
+        margin-right: auto;
+        border-radius: 10px;
+        margin-top: 60px;
+    }
+
+    .button-font-nonebox-1-Pc {
+        width: 90px;
+        background-image: url(/Images/Plus-blue.png);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: rgba(30, 56, 135, 0);
+    }
+
+    .text-button-Pc {
+        font-size: 2.4rem;
+        padding: 30px;
+        color: var(--light-blue-color);
+        font-weight: 900;
+        margin-right: auto;
+    }
+
+    .arrow {
+        display: flex;
+        background-image: url("/Images/arrow.svg");
+        background-color: rgba(33, 56, 135, 0.06);
+        border-radius: 50px;
+        width: 3%;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px;
+        border: none;
+        margin-left: 60px;
+    }
+
+    .whatsapp {
+        display: flex;
+        width: 420px;
+        background-color: rgba(33, 56, 135, 0.06);
+        border-radius: 50px;
+        margin-right: 60px;
+    }
+
+    .whatsapp img {
+        width: 25px;
+        margin: 5px 5px 5px 20px;
+    }
+
+    .chat {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--blue-color);
+        text-decoration: none;
+        margin-top: 22px;
+    }
+
+    .whatsapp-hr {
+        width: 0.2px;
+        height: 30px;
+        margin: 15px;
+        color: var(--gray-color);
+    }
+
+    .email {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--light-blue-color);
+        margin-top: 22px;
+    }
+
+    .bottom-of-sect1 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 500px;
+    }
+
+
+    /* Секция Усулги */
+
+    h2 {
+        font-size: 9.4rem;
+        text-align: left;
+        max-width: none;
+    }
+
+    .sect-uslugi {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .uslug-buttons {
+        display: none;
+    }
+
+    .uslugi-header {
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 50px 0 50px 0;
+    }
+
+    .left-right-button {
+        display: flex;
+        background-color: white;
+        border-radius: 100px;
+        width: 169px;
+        justify-content: space-between;
+        margin: 27px;
+    }
+
+    .lr-hr {
+        position: relative;
+        width: 0.2px;
+        height: 30px;
+        top: 13px;
+    }
+
+    .left-right-button button {
+        border: none;
+        background-color: white;
+        border-radius: 100px;
+        padding: 0 15px 0 15px;
+    }
+
+    .left-right-button button img {
+        width: 35px;
+    }
+
+    .uslug-text {
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+
+    .uslugi-ul {
+        display: flex;
+        margin-left: 20px;
+        justify-content: space-around;
+    }
+
+    .zaglushka-uslugi {
+        height: 450px;
+        position: relative;
+        top: 30px;
+        width: 50px;
+    }
+
+    #uslug-inf .div-button-uslug {
+        display: none;
+    }
+
+    #uslug-slezh .div-button-uslug {
+        display: none;
+    }
+
+    #uslug-business .div-button-uslug {
+        display: none;
+    }
+
+    div.uslugi {
+        width: 95%;
+    }
+
+    h3 {
+        font-size: 3.4rem;
+        margin: 20px;
+    }
+
+    .uslugs-image-2 {
+        display: block;
+        background-color: rgba(243, 246, 249, 1);
+        border-radius: 45px;
+        padding: 0px 20px 0px 5px;
+    }
+
+    .uslugs-image-2 img {
+        width: 100%;
+    }
+
+    .uslugs-image-3 {
+        display: block;
+        background-color: rgba(243, 246, 249, 1);
+        border-radius: 45px;
+        padding: 40px 90px 40px 90px;
+    }
+
+    .uslugs-image-3 img {
+        width: 100%;
+    }
+
+    .uslugs-image-4 {
+        display: block;
+        background-color: rgba(243, 246, 249, 1);
+        border-radius: 45px;
+        padding: 10px 150px 10px 140px;
+        width: 100%;
+    }
+
+    .uslugs-image-4 img {
+        width: 90px;
+    }
+
+    .text-uslugi{
+        font-size: 1.7rem;
+    }
+
+    .div-button-uslug{
+        padding: 5px;
+    }
+
+    .text-button-box{
+        font-size: 2rem;
+    }
+
+    .button-font-box{
+        width: 90px;
+    }
+
+    /* Как мы работаем */
+
+    .sect-how-work {
+        display: flex;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .how-work-images {
+        display: none;
+    }
+
+    .spisok li {
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 90%;
+        margin: 0 0 0.5em 0;
+        height: 160px;
+        border-radius: 20px;
+    }
+
+    .bg-sect-how-work {
+        width: 70%;
+        margin-top: 50px;
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    .how-work-text {
+        grid-area: 2 / 1 / -1 / -1;
+        margin-left: 0;
+        color: rgba(152, 158, 177, 1);
+        font-size: 3rem;
+        font-weight: normal;
+    }
+
+    .how-work-number {
+        grid-area: 1 / 2 / 1 / 2;
+        left: 50%;
+        top: -10px;
+        font-size: 2rem;
+    }
+
+    .Pc-how-work {
+        display: block;
+        width: 30%;
+        margin-left: 32px;
+    }
+
+    ol {
+        margin: 2em 0 0 1em;
+    }
+
+    /* Наши клиенты */
+
+    div.all-clients {
+        display: grid;
+        grid-template-columns: 2fr 0fr 4fr 0fr 2fr;
+        grid-template-rows: 1fr 2fr;
+        border-radius: 0;
+        background-image: url(/Images/graphic.svg);
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: right 0 bottom 0;
+    }
+
+    .Our_Clients {
+        grid-area: 1 / 1 / 1 / 1;
+        margin-left: 32px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .container-blocks {
+        margin-top: 90px;
+        margin-bottom: 40px;
+        grid-area: 1 / 3 / -1 / 3;
+    }
+
+    #Our_Clients_p {
+        grid-area: 1 / 5 / 1 / 5;
+        margin-right: 52px;
+        margin-top: 90px;
+        font-size: 3.4rem;
+    }
+
+    div.client{
+        border-radius: 30px;
+    }
+
+    .client {
+        height: 95%;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    #first {
+        padding: 10px;
+        margin: 20px;
+        width: 140px;
+    }
+
+    #second {
+        padding: 10px;
+        margin: 20px;
+        width: 140px;
+    }
+
+    #third {
+        padding: 10px;
+        margin: 20px;
+        width: 140px;
+    }
+
+    #fourth {
+        padding: 10px;
+        margin: 20px;
+        width: 140px;
+    }
+
+    .text-p-cl {
+        font-size: 3.4rem;
+        font-weight: normal;
+        margin-top: 320px;
+        margin-left: 50px;
+    }
+
+    #right-bottom-img {
+        display: none;
+    }
+
+    /* Связаться с нами */
+
+    .div-arrow-up {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .arrow-up {
+        display: flex;
+        background-image: url("/Images/arrow-up.svg");
+        background-color: rgba(33, 56, 135, 0.06);
+        background-size: 50%;
+        border-radius: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        margin-right: 60px;
+        align-self: center;
+    }
+
+    .forma-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 30px;
+        margin-bottom: 70px;
+        gap: 60px;
+    }
+
+    .div-button-2-Pc {
+        display: flex;
+        grid-area: 2 / 3 / 2 / 3;
+        width: 360px;
+        background-color: rgba(33, 56, 135, 0.06);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .button-font-nonebox-1-Pc-2 {
+        width: 90px;
+        background-image: url(/Images/Plus-blue.png);
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+        background-color: rgba(30, 56, 135, 0);
+    }
+
+    .text-button-Pc-2 {
+        font-size: 2.4rem;
+        padding: 20px;
+        color: var(--light-blue-color);
+        font-weight: 900;
+        margin-right: auto;
+    }
+
+    .div-button-2 {
+        display: none;
+    }
+
+    .text-agreement {
+        font-size: 1.8rem;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 0;
+        grid-area: 2 / 2 / 2 / 2;
+    }
+
+    input {
+        margin-left: 30px;
+    }
+
+    input[name="email"]::-webkit-input-placeholder {
+        color: var(--gray-color);
+        font-size: 3.4rem;
+    }
+
+    input[name="name"]::-webkit-input-placeholder {
+        color: var(--gray-color);
+        font-size: 3.4rem;
+    }
+
+    input[name="number"]::-webkit-input-placeholder {
+        color: var(--gray-color);
+        font-size: 3.4rem;
+    }
+
+    .inp1 {
+        display: flex;
+    }
+
+    .inp2 {
+        display: flex;
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    .inp3 {
+        display: flex;
+        grid-area: 1 / 2 / 1 / 4;
+    }
+
+    .inp1 p {
+        font-size: 3.4rem;
+        color: var(--blue-color);
+        align-self: center;
+        width: 40%;
+        padding-top: 25px;
+        margin-left: 30px;
+    }
+
+    .inp2 p {
+        font-size: 3.4rem;
+        color: var(--blue-color);
+        align-self: center;
+        width: 35%;
+        padding-top: 25px;
+        margin-left: 30px;
+    }
+
+    .inp3 p {
+        font-size: 3.4rem;
+        color: var(--blue-color);
+        align-self: center;
+        width: 30%;
+        padding-top: 25px;
+        margin-left: 30px;
+    }
+
+    .custom-checkbox {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .contact-with-us {
+        display: flex;
+        width: 700px;
+        border: 1px solid var(--gray-color);
+        border-radius: 50px;
+        margin-left: 20px;
+        font-size: 2.5rem;
+        align-items: center;
+    }
+
+    .contact-with-us img {
+        width: 150px;
+    }
+
+    .chat-footer {
+        width: 200px;
+        padding-left: 25px;
+    }
+
+    .email-footer {
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--light-blue-color);
+        padding-right: 25px;
+        align-self: center;
+    }
+
+    .confidience {
+        font-size: 2rem;
+    }
+
+    .design {
+        font-size: 2rem;
+    }
+
+    .text-2023 {
+        font-size: 2rem;
+    }
+
 
 }
