@@ -33,13 +33,13 @@
     </header>
     <main>
        
-            <form action="/login" method="post">
+            <form action="//httpbin.org/post" method="post">
                 <div class="forma">
                 <h1>Форма</h1>
                 <div class="information">
                     <h2>Личная информация</h2>
                     <div class="inp">
-                        <p>Имя</p>
+                        <p>Имя*</p>
                         <input type="text" name="name_1" placeholder="Иван" required>
                     </div>
                     <div class="inp">
@@ -47,24 +47,24 @@
                         <input max="2023-01-01" type="date" name="date">
                     </div>
                     <div class="inp">
-                        <p>Пол</p>
+                        <p>Пол*</p>
                         <div class="floor">
-                            <input type="radio" name="size" id="man" checked="checked">
+                            <input type="radio" name="size" id="man" required>
                             <label for="man">Мужской</label>
-                            <input type="radio" name="size" id="woman">
+                            <input type="radio" name="size" id="woman" required>
                             <label for="woman">Женский</label>
                         </div>
                     </div>
                     <div class="inp">
-                        <p>Пароль</p>
-                        <input type="password" name="password" placeholder="Password">
+                        <p>Пароль*</p>
+                        <input type="password" name="password" placeholder="Password" required>
                     </div>
                 </div>
                 <div class="contact">
                     <h2>Контактная информация</h2>
                     <div class="inp">
-                        <p>Email</p>
-                        <input type="email" name="email" placeholder="example@gmail.com">
+                        <p>Email*</p>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
                     </div>
                     <div class="inp">
                         <p>Номер</p>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="time">
-                    <h2>Время для связи</h2>
+                    <h2>Время для связи*</h2>
                     <div class="select-wrapper">
                         <select name="select-ccategory" id="" class="select">
                             <option value="1">Утро (8:00-12:00)</option>
@@ -82,6 +82,8 @@
                         </select>
                     </div>
                 </div> 
+                    <button type="reset" class="button-1"><p class="text-button1">Сбросить</p></button>
+                    <button class="button-2"><p class="text-button2">Отправить</p></button>
             </div>
             </form>
        
