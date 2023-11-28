@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form_style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <header id="start">
+        <a href="#" target="_blank"><img class="logo" src="/Images/Logotip.svg" alt=""> </a>
+        <nav class="hede-href-displ">
+            <a class="head-href" href="index.html">Главный</a>
+            <a class="head-href" href="#Glavn">О нас</a>
+            <a class="head-href" href="#Uslugi">Услуги</a>
+            <a class="head-href" href="#How-work">Как мы работаем</a>
+            <a class="head-href" href="#Clients">Клиенты</a>
+            <a class="head-href" href="#Contact">Контакты</a>
+            <a class="head-href" href="form.html">Форма</a>
+        </nav>
+        <button class="button-settings"> <img src="/Images/Settings.png" alt=""> </button>
+        <div class="div-button-set">
+            <p class="text-button-set">Оформить заявку</p>
+            <button class="button-font-nonebox-1-set"></button>
+        </div>
+    </header>
+    <main>
+       
+            <form action="/login" method="post">
+                <div class="forma">
+                <h1>Форма</h1>
+                <div class="information">
+                    <h2>Личная информация</h2>
+                    <div class="inp">
+                        <p>Имя</p>
+                        <input type="text" name="name_1" placeholder="Иван" required>
+                    </div>
+                    <div class="inp">
+                        <p>Дата рождения</p>
+                        <input max="2023-01-01" type="date" name="date">
+                    </div>
+                    <div class="inp">
+                        <p>Пол</p>
+                        <div class="floor">
+                            <input type="radio" name="size" id="man" checked="checked">
+                            <label for="man">Мужской</label>
+                            <input type="radio" name="size" id="woman">
+                            <label for="woman">Женский</label>
+                        </div>
+                    </div>
+                    <div class="inp">
+                        <p>Пароль</p>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2>Контактная информация</h2>
+                    <div class="inp">
+                        <p>Email</p>
+                        <input type="email" name="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="inp">
+                        <p>Номер</p>
+                        <input type="tel" name="number" placeholder="+7 (___) ___-____.">
+                    </div>
+                </div>
+                <div class="time">
+                    <h2>Время для связи</h2>
+                    <div class="select-wrapper">
+                        <select name="select-ccategory" id="" class="select">
+                            <option value="1">Утро (8:00-12:00)</option>
+                            <option value="2">Обед (12:00-15:00)</option>
+                            <option value="3">Вечер (15:00-18:00)</option>
+                            <option value="4">Ночь (18:00-21:00)</option>
+                        </select>
+                    </div>
+                </div> 
+            </div>
+            </form>
+       
+
+
+
+
+
+    </main>
+    <footer id="end">
+        <div class="footer">
+            <div class="contact-with-us">
+                <a href="#" class="chat-footer"><img src="/Images/WhatsApp-footer.svg" alt=""></a>
+                <hr class="whatsapp-hr">
+                <a href="#" class="tg"><img src="/Images/Telegram-footer.svg" alt=""></a>
+                <hr class="whatsapp-hr">
+                <a href="#" class="email-footer">adrasteia@mail.com</a>
+            </div>
+            <a class="confidience" href="#">Политика конфиденциальности</a>
+            <a class="design" href="grid.html">Дизайн и разработка - Karanikola</a>
+            <a class="text-2023">©2023</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

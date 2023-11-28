@@ -27,6 +27,13 @@ body {
     color: var(--blue-color);
 }
 
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
 h1 {
     max-width: 600px;
     padding-left: 10px;
@@ -1690,6 +1697,7 @@ input[name="email"]::-webkit-input-placeholder {
         background-color: rgba(33, 56, 135, 0.06);
         border-radius: 10px;
         margin-top: 10px;
+
     }
 
     .button-font-nonebox-1-Pc-2 {
@@ -1708,6 +1716,7 @@ input[name="email"]::-webkit-input-placeholder {
         color: var(--light-blue-color);
         font-weight: 900;
         margin-right: auto;
+        align-self: center;
     }
 
     .div-button-2 {
