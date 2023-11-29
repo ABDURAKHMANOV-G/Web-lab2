@@ -37,14 +37,18 @@
                 <div class="forma">
                 <h1>Форма</h1>
                 <fieldset class="information">
-                    <h2>Личная информация</h2>
+                    <legend>Личная информация</legend>
                     <div class="inp">
-                        <p>Имя*</p>
-                        <input type="text" name="name_1" placeholder="Иван" required>
+                        <label>
+                            <p>Имя*</p>
+                            <input type="text" name="name_1" placeholder="Иван" required>
+                        </label>
                     </div>
                     <div class="inp">
-                        <p>Дата рождения</p>
-                        <input max="2023-01-01" type="date" name="date">
+                        <label>
+                            <p>Дата рождения</p>
+                            <input max="2023-01-01" type="date" name="date">
+                        </label>
                     </div>
                     <div class="inp">
                         <p>Пол*</p>
@@ -56,23 +60,29 @@
                         </div>
                     </div>
                     <div class="inp">
-                        <p>Пароль*</p>
-                        <input type="password" name="password" placeholder="Password" required>
+                        <label>
+                            <p>Пароль*</p>
+                            <input type="password" name="password" placeholder="Password" required>
+                        </label>
                     </div>
                 </fieldset>
-                <div class="contact">
-                    <h2>Контактная информация</h2>
+                <fieldset class="contact">
+                    <legend>Контактная информация</legend>
                     <div class="inp">
-                        <p>Email*</p>
-                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                        <label>
+                            <p>Email*</p>
+                            <input type="email" name="email" placeholder="example@gmail.com" required>
+                        </label>
                     </div>
                     <div class="inp">
-                        <p>Номер</p>
-                        <input type="tel" name="number" placeholder="+7 (___) ___-____.">
+                        <label>
+                            <p>Номер</p>
+                            <input type="tel" name="number" placeholder="+7 (___) ___-____.">
+                        </label>
                     </div>
-                </div>
-                <div class="time">
-                    <h2>Время для связи*</h2>
+                </fieldset>
+                <fieldset class="time">
+                    <legend>Время для связи*</legend>
                     <div class="select-wrapper">
                         <select name="select-ccategory" id="" class="select">
                             <option value="1">Утро (8:00-12:00)</option>
@@ -81,9 +91,9 @@
                             <option value="4">Ночь (18:00-21:00)</option>
                         </select>
                     </div>
-                </div> 
+                </fieldset> 
                     <button type="reset" class="button-1"><p class="text-button1">Сбросить</p></button>
-                    <button class="button-2"><p class="text-button2">Отправить</p></button>
+                    <button type="submit" class="button-2"><p class="text-button2">Отправить</p></button>
             </div>
             </form>
        
