@@ -113,11 +113,14 @@ h1{
     text-decoration: underline;
 }
 
-h2{
+legend{
     font-size: 2.5rem;
     color: var(--blue-color);
     text-align: center;
+}
 
+fieldset{
+    border: none;
 }
 
 .information{
