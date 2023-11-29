@@ -34,6 +34,11 @@ body > footer {
   top: 100vh;
 }
 
+.wrapper{
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     max-width: 600px;
     padding-left: 10px;
@@ -215,14 +220,7 @@ div.uslugi {
 
 .uslugs-image-1 {
     display: block;
-    text-align: center;
-    background-color: rgba(243, 246, 249, 1);
     border-radius: 45px;
-    padding: 30px 0 20px 35px;
-    overflow: hidden;
-}
-
-.uslugs-image-1 img {
     width: 100%;
 }
 
@@ -697,7 +695,7 @@ input[name="email"]::-webkit-input-placeholder {
         text-align: left;
         background-image: url(/Images/BG_Sect1_PC.svg);
         background-size: 85%;
-        background-position: 100% 120%;
+        background-position: 100% -80px;
         background-repeat: no-repeat;
     }
 
@@ -807,6 +805,10 @@ input[name="email"]::-webkit-input-placeholder {
         text-align: left;
     }
 
+    .svyaz{
+        padding-left: 25px;
+    }
+
     .sect-uslugi {
         width: 95%;
         margin-left: auto;
@@ -861,12 +863,6 @@ input[name="email"]::-webkit-input-placeholder {
         display: flex;
     }
 
-    .zaglushka-uslugi {
-        height: 400px;
-        position: relative;
-        top: 30px;
-        margin-right: 3px;
-    }
 
     #uslug-inf .div-button-uslug {
         display: none;
@@ -889,40 +885,35 @@ input[name="email"]::-webkit-input-placeholder {
         margin: 20px;
     }
 
-    .uslugs-image-2 {
+    .uslugs-image-1 {
         display: block;
-        background-color: rgba(243, 246, 249, 1);
-        border-radius: 45px;
-        padding: 0px 20px 0px 5px;
+        width: 100%;
+        border-radius: 40px;
     }
 
-    .uslugs-image-2 img {
+    .uslugs-image-2 {
+        display: block;
         width: 100%;
+        border-radius: 40px;
     }
 
     .uslugs-image-3 {
         display: block;
-        background-color: rgba(243, 246, 249, 1);
-        border-radius: 45px;
-        padding: 40px 90px 40px 90px;
-    }
-
-    .uslugs-image-3 img {
         width: 100%;
+        border-radius: 40px;
     }
 
     .uslugs-image-4 {
         display: block;
-        background-color: rgba(243, 246, 249, 1);
-        border-radius: 45px;
-        padding: 10px 80px 10px 80px;
         width: 100%;
+        border-radius: 40px;
     }
 
-    .uslugs-image-4 img {
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+    .zaglushka-uslugi {
+        height: 450px;
+        position: relative;
+        top: 30px;
+        margin-right: 3px;
     }
 
     .sect-how-work {
@@ -1304,13 +1295,17 @@ input[name="email"]::-webkit-input-placeholder {
         display: flex;
         text-align: left;
         background-image: url(/Images/BG_Sect1_PC.svg);
-        background-size: 70%;
-        background-position: 100% 120%;
+        background-size: 80%;
+        background-position: 100% -100px;
         background-repeat: no-repeat;
     }
 
     h1 {
         padding-left: 52px;
+    }
+
+    .svyaz{
+        padding-left: 25px;
     }
 
     .div-button {
@@ -1471,14 +1466,39 @@ input[name="email"]::-webkit-input-placeholder {
     .uslugi-ul {
         display: flex;
         margin-left: 20px;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+
+    .uslugs-image-1 {
+        display: block;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    .uslugs-image-2 {
+        display: block;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    .uslugs-image-3 {
+        display: block;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    .uslugs-image-4 {
+        display: block;
+        width: 100%;
+        border-radius: 40px;
     }
 
     .zaglushka-uslugi {
         height: 450px;
         position: relative;
         top: 30px;
-        width: 50px;
+        margin-right: 3px;
     }
 
     #uslug-inf .div-button-uslug {
@@ -1500,40 +1520,6 @@ input[name="email"]::-webkit-input-placeholder {
     h3 {
         font-size: 3.4rem;
         margin: 20px;
-    }
-
-    .uslugs-image-2 {
-        display: block;
-        background-color: rgba(243, 246, 249, 1);
-        border-radius: 45px;
-        padding: 0px 20px 0px 5px;
-    }
-
-    .uslugs-image-2 img {
-        width: 100%;
-    }
-
-    .uslugs-image-3 {
-        display: block;
-        background-color: rgba(243, 246, 249, 1);
-        border-radius: 45px;
-        padding: 40px 90px 40px 90px;
-    }
-
-    .uslugs-image-3 img {
-        width: 100%;
-    }
-
-    .uslugs-image-4 {
-        display: block;
-        background-color: rgba(243, 246, 249, 1);
-        border-radius: 45px;
-        padding: 10px 150px 10px 140px;
-        width: 100%;
-    }
-
-    .uslugs-image-4 img {
-        width: 90px;
     }
 
     .text-uslugi{

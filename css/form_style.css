@@ -117,6 +117,8 @@ legend{
     font-size: 2.5rem;
     color: var(--blue-color);
     text-align: center;
+    position: relative;
+    top: 30px;
 }
 
 fieldset{
@@ -178,12 +180,13 @@ input {
     width: 100%;
 }
 
-.inp p{
+.textp{
     font-size: 1.5rem;
     color: var(--blue-color);
     font-weight: 900;
     margin: 15px 20px 0 10px;
     padding-top: 15px;
+    text-align: center;
 }
 
 .floor{
@@ -194,7 +197,7 @@ input[type="radio"]{
     display: none;
 }
 
-label{
+.gender{
     color: var(--light-blue-color);
     margin-left: 10px;
     margin-right: 10px;
@@ -208,7 +211,7 @@ label{
     align-items: center;
 }
 
-label:before{
+.gender:before{
     display: inline-block;
     content: "";
     height: 20px;
@@ -218,12 +221,12 @@ label:before{
     margin-right: 20px;
 }
 
-input[type="radio"]:checked + label{
+input[type="radio"]:checked + .gender{
     background-color: var(--light-blue-color);
     color: white;
 }
 
-input[type="radio"]:checked + label:before{
+input[type="radio"]:checked + .gender:before{
     height: 20px;
     width: 20px;
     border: 4px solid white;
