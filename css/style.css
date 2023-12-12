@@ -238,15 +238,19 @@ div.uslugi {
     margin-right: auto;
     text-align: left;
     width: 90%;
+    position: relative;
 }
 
-
-#uslug-business{
-   position: relative; 
-   
+.business{
+    opacity: 0;
+    animation: ani 7s forwards;
+    
 }
 
-
+@keyframes ani {
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  } 
 
 .loader {
     width: 48px;
@@ -255,8 +259,15 @@ div.uslugi {
     border-radius: 50%;
     position: absolute;
     right: 40%;
+    top: 50%;
     transform:rotate(45deg);
     box-sizing: border-box;
+    animation: ani2 5s forwards;
+  }
+
+  @keyframes ani2 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
   }
   .loader::before {
     content: "";
@@ -265,7 +276,7 @@ div.uslugi {
     inset:-10px;
     border-radius: 50%;
     border:10px solid var(--blue-color);
-    animation: prixClipFix 2s infinite;
+    animation: prixClipFix 2s infinite linear;
   }
 
   @keyframes prixClipFix {
@@ -276,20 +287,6 @@ div.uslugi {
       100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
   }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .uslugs-image-1 {
     display: block;
     border-radius: 45px;
