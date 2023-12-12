@@ -14,6 +14,20 @@ html {
     box-sizing: inherit;
 }
 
+::selection {
+    color: var(--gray-color);
+    background: var(--light-blue-color);
+  }
+
+a:hover{
+    color: var(--gray-color);
+}
+
+a:focus{
+    color: var(--light-blue-color);
+}
+
+
 :root {
     font-size: 62.5%;
     --gray-color: #afb4c4;
@@ -180,6 +194,14 @@ ul {
     background-color: rgba(30, 56, 135, 0);
 }
 
+.button-font-nonebox-1-Pc:hover{
+    cursor: pointer;
+}
+
+.button-font-nonebox-1-Pc-2:hover{
+    cursor: pointer;
+}
+
 div.all-uslugs {
     display: block;
     position: relative;
@@ -218,6 +240,56 @@ div.uslugi {
     width: 90%;
 }
 
+
+#uslug-business{
+   position: relative; 
+   
+}
+
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border:10px solid var(--gray-color);
+    border-radius: 50%;
+    position: absolute;
+    right: 40%;
+    transform:rotate(45deg);
+    box-sizing: border-box;
+  }
+  .loader::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    inset:-10px;
+    border-radius: 50%;
+    border:10px solid var(--blue-color);
+    animation: prixClipFix 2s infinite;
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .uslugs-image-1 {
     display: block;
     border-radius: 45px;
@@ -228,6 +300,11 @@ div.uslugi {
     list-style-type: none;
     /* Убираем маркеры у списка */
 }
+
+#uslug-roz .text-uslugi li:nth-child(even){
+    color: var(--gray-color);
+}
+
 
 .text-uslugi li:before {
     content: "- ";
@@ -266,6 +343,10 @@ div.uslugi {
     background-position: center;
     background-size: 50%;
     background-color: var(--blue-color);
+}
+
+.button-font-box:hover{
+    cursor: pointer;
 }
 
 .spisok li {
@@ -440,7 +521,6 @@ input {
     transform: scale(1);
 }
 
-
 .footer {
     display: flex;
     font-size: 0.6em;
@@ -451,6 +531,10 @@ input {
 
 .confidience {
     color: var(--gray-color);
+}
+
+.confidience:hover{
+    color: var(--blue-color);
 }
 
 .design {
@@ -650,6 +734,10 @@ input[name="email"]::-webkit-input-placeholder {
         background-position: center;
         background-size: 50%;
         background-color: rgba(30, 56, 135, 0);
+    }
+
+    .button-font-nonebox-1-set:hover{
+        cursor: pointer;
     }
 
     .text-button-set {
@@ -1475,7 +1563,6 @@ input[name="email"]::-webkit-input-placeholder {
         margin-left: 20px;
         justify-content: space-between;
     }
-
 
     .uslugs-image-1 {
         display: block;
