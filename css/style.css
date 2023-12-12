@@ -111,7 +111,7 @@ ul {
 }
 
 .button-settings img {
-    width: 50%;
+    width: 25px;
 }
 
 
@@ -172,7 +172,7 @@ ul {
 
 .button-font-nonebox-1 {
     background-image: url(/Images/Plus-blue.png);
-    width: 20%;
+    width: 70px;
     border: none;
     background-repeat: no-repeat;
     background-position: center;
@@ -259,7 +259,7 @@ div.uslugi {
 
 .button-font-box {
     background-image: url(/Images/Plus-white.png);
-    width: 20%;
+    width: 70px;
     border-radius: 20px;
     border: none;
     background-repeat: no-repeat;
@@ -480,7 +480,7 @@ input[name="email"]::-webkit-input-placeholder {
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
-        max-width: 340px;
+        
         min-width: 320px;
     }
 
@@ -497,18 +497,17 @@ input[name="email"]::-webkit-input-placeholder {
         width: 200px;
     }
 
-    .sect1{
-        background-image: url(/Images/BG_Sect1.svg);
+    .bg-img-sect1 img{
         background-repeat: no-repeat;
-        background-position: 50% 65%;
+        width: 100%;
     }
 
     .div-button{
-        margin-top: 350px;
+        margin-top: 0px;
     }
 
     h2 {
-        margin: auto;
+        
     }
 
     .div-button-Pc {
@@ -683,6 +682,10 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .bg-sect1 {
+        display: none;
+    }
+
+    .bg-img-sect1 img{
         display: none;
     }
 
@@ -1284,6 +1287,10 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .bg-sect1 {
+        display: none;
+    }
+
+    .bg-img-sect1 img{
         display: none;
     }
 
