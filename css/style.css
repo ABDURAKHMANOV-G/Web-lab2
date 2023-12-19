@@ -345,7 +345,6 @@ div.uslugi {
     background-position: center;
     background-size: 50%;
     background-color: var(--blue-color);
-    filter: contrast(0.5);
 }
 
 .button-font-box:hover{
@@ -1622,7 +1621,6 @@ input[name="email"]::-webkit-input-placeholder {
 
     .button-font-box{
         width: 90px;
-        filter: contrast(0.5);
     }
 
     /* Как мы работаем */
