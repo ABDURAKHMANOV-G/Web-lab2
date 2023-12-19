@@ -148,6 +148,7 @@ ul {
     font-size: 3.5rem;
     color: var(--gray-color);
     font-weight: bold;
+    filter: contrast(0.5);
 }
 
 .text-p-head {
@@ -157,6 +158,7 @@ ul {
     font-size: 1.4rem;
     font-weight: 500;
     width: 90%;
+    filter: contrast(0.5);
 }
 
 .bg-sect1 {
@@ -302,6 +304,7 @@ div.uslugi {
 
 #uslug-roz .text-uslugi li:nth-child(even){
     color: var(--gray-color);
+    filter: contrast(0.5);
 }
 
 
@@ -378,6 +381,7 @@ div.uslugi {
     font-size: 1.2rem;
     left: 7%;
     top: -15px;
+    filter: contrast(0.5);
 }
 
 div.all-clients {
@@ -424,7 +428,7 @@ div.client {
     font-weight: 900;
     text-align: left;
     margin-top: 5.5em;
-
+    filter: contrast(0.5);
 }
 
 #first {
@@ -487,6 +491,7 @@ input {
     margin: 20px;
     margin-right: auto;
     width: 50%;
+    filter: contrast(0.5);
 }
 
 .real-checkbox {
@@ -531,6 +536,7 @@ input {
 
 .confidience {
     color: var(--gray-color);
+    filter: contrast(0.5);
 }
 
 .confidience:hover{
@@ -545,6 +551,7 @@ input {
     position: static;
     right: auto;
     color: var(--gray-color);
+    filter: contrast(0.5);
 }
 
 .form {
@@ -626,13 +633,12 @@ input[name="email"]::-webkit-input-placeholder {
         position: absolute;
         width: 1px;
         height: 1px;
-        margin: -1px;
-        border: 0;
         padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
+        margin: -1px;
         overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
     }
 
     .div-button-set {
@@ -1191,6 +1197,7 @@ input[name="email"]::-webkit-input-placeholder {
     input[name="email"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 2.3rem;
+        filter: contrast(0.5);
     }
 
     .input-i i{
@@ -1198,15 +1205,16 @@ input[name="email"]::-webkit-input-placeholder {
         font-size: 2.3rem;
     }
 
-
     input[name="name"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 2.3rem;
+        filter: contrast(0.5);
     }
 
     input[name="number"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 2.3rem;
+        filter: contrast(0.5);
     }
 
     .inp1 {
@@ -1245,6 +1253,7 @@ input[name="email"]::-webkit-input-placeholder {
         margin-left: 20px;
         font-size: 2.5rem;
         align-items: center;
+        filter: contrast(0.5);
     }
 
     .contact-with-us img {
@@ -1819,16 +1828,19 @@ input[name="email"]::-webkit-input-placeholder {
     input[name="email"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 3.4rem;
+        filter: contrast(0.5);
     }
 
     input[name="name"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 3.4rem;
+        filter: contrast(0.5);
     }
 
     input[name="number"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 3.4rem;
+        filter: contrast(0.5);
     }
 
     .inp1 {
@@ -1845,8 +1857,9 @@ input[name="email"]::-webkit-input-placeholder {
         grid-area: 1 / 2 / 1 / 4;
     }
 
-    .inp1 p {
-        font-size: 3.4rem;
+   
+    .input-i {
+        font-size: 2.3rem;
         color: var(--blue-color);
         align-self: center;
         width: 40%;
@@ -1854,22 +1867,9 @@ input[name="email"]::-webkit-input-placeholder {
         margin-left: 30px;
     }
 
-    .inp2 p {
-        font-size: 3.4rem;
-        color: var(--blue-color);
-        align-self: center;
-        width: 35%;
-        padding-top: 25px;
-        margin-left: 30px;
-    }
-
-    .inp3 p {
-        font-size: 3.4rem;
-        color: var(--blue-color);
-        align-self: center;
-        width: 30%;
-        padding-top: 25px;
-        margin-left: 30px;
+    .input-i i{
+        color: red;
+        font-size: 2.3rem;
     }
 
     .custom-checkbox {
