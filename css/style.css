@@ -330,7 +330,7 @@ div.uslugi {
 
 .text-button-box {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 900;
     padding: 20px;
     margin-right: auto;
@@ -1430,7 +1430,7 @@ input[name="email"]::-webkit-input-placeholder {
         padding: 30px;
         color: var(--light-blue-color);
         font-weight: 900;
-        margin-right: auto;
+        margin: 0;
     }
 
     .arrow {
@@ -1616,7 +1616,7 @@ input[name="email"]::-webkit-input-placeholder {
     }
 
     .text-button-box{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .button-font-box{
@@ -1813,7 +1813,7 @@ input[name="email"]::-webkit-input-placeholder {
         padding: 20px;
         color: var(--light-blue-color);
         font-weight: 900;
-        margin-right: auto;
+        margin: 5px;
         align-self: center;
     }
 
