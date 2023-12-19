@@ -6,6 +6,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -29,6 +30,10 @@ a:focus{
     transition: 0.3s;
 }
 
+:focus{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 
 :root {
     font-size: 62.5%;
@@ -41,6 +46,22 @@ body {
     font-family: 'Mulish', sans-serif;
     font-size: 1.5rem;
     color: var(--blue-color);
+}
+
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: white;
+    background: var(--light-blue-color);
+    transform: translateY(-100%);
+  }
+
+.skip-link:focus {
+    transform: translateY(20%);
+    color: white;
 }
 
 html, body { height: 100%;}
@@ -492,7 +513,7 @@ input {
     margin: 20px;
     margin-right: auto;
     width: 50%;
-    filter: contrast(0.5);
+    filter: contrast(1);
 }
 
 .real-checkbox {
@@ -861,13 +882,14 @@ input[name="email"]::-webkit-input-placeholder {
         font-weight: 700;
         color: var(--blue-color);
         text-decoration: none;
-        margin-top: 22px;
+        margin-top: 28px;
     }
 
     .whatsapp-hr {
         width: 0.2px;
         height: 30px;
         margin: 15px;
+        margin-top: 20px;
         color: var(--gray-color);
     }
 
@@ -875,7 +897,7 @@ input[name="email"]::-webkit-input-placeholder {
         font-size: 1.5rem;
         font-weight: 700;
         color: var(--light-blue-color);
-        margin-top: 22px;
+        margin-top: 28px;
     }
 
     .bottom-of-sect1 {
