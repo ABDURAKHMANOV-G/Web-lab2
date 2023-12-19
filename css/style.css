@@ -373,6 +373,7 @@ div.uslugi {
     margin-left: 10%;
     margin-top: 5%;
     font-weight: 600;
+    filter: contrast(0.2);
 }
 
 .how-work-number {
@@ -381,7 +382,7 @@ div.uslugi {
     font-size: 1.2rem;
     left: 7%;
     top: -15px;
-    filter: contrast(0.5);
+    filter: contrast(0.1);
 }
 
 div.all-clients {
@@ -839,6 +840,7 @@ input[name="email"]::-webkit-input-placeholder {
         padding: 30px;
         border: none;
         margin-left: 60px;
+        text-decoration: none;
     }
 
     .whatsapp {
@@ -1140,6 +1142,7 @@ input[name="email"]::-webkit-input-placeholder {
         border: none;
         margin-right: 60px;
         align-self: center;
+        text-decoration: none;
     }
 
     .forma-grid {
@@ -1203,6 +1206,7 @@ input[name="email"]::-webkit-input-placeholder {
     .input-i i{
         color: red;
         font-size: 2.3rem;
+        filter: contrast(0.5);
     }
 
     input[name="name"]::-webkit-input-placeholder {
@@ -1230,6 +1234,7 @@ input[name="email"]::-webkit-input-placeholder {
         display: flex;
         grid-area: 1 / 2 / 1 / 4;
     }
+
 
     .input-i {
         font-size: 2.3rem;
@@ -1439,6 +1444,7 @@ input[name="email"]::-webkit-input-placeholder {
         padding: 30px;
         border: none;
         margin-left: 60px;
+        text-decoration: none;
     }
 
     .whatsapp {
@@ -1754,6 +1760,7 @@ input[name="email"]::-webkit-input-placeholder {
         display: flex;
         justify-content: space-between;
         margin-top: 50px;
+        text-decoration:dashed;
     }
 
     .arrow-up {
@@ -1769,6 +1776,7 @@ input[name="email"]::-webkit-input-placeholder {
         border: none;
         margin-right: 60px;
         align-self: center;
+        text-decoration: none;
     }
 
     .forma-grid {
@@ -1870,6 +1878,7 @@ input[name="email"]::-webkit-input-placeholder {
     .input-i i{
         color: red;
         font-size: 2.3rem;
+        filter: contrast(0.5);
     }
 
     .custom-checkbox {
