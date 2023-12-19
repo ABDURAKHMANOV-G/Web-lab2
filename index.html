@@ -248,15 +248,16 @@
                 </div>
                 <form class="forma-grid">
                     <div class="inp1">
-                        <p>Меня зовут</p>
+                        <label for="name" class="input-i">Меня зовут<i>*</i></label>
                         <input placeholder="Караникола Евгений" name="name" required>
                     </div>
                     <div class="inp2">
-                        <p>Мой email</p>
+                        <label for="email" class="input-i">Мой email<i>*</i></label>
                         <input placeholder="example@gmail.com" name="email" type="email" required>
+                        
                     </div>
                     <div class="inp3">
-                        <p>Мой номер</p>
+                        <label for="number" class="input-i">Мой номер<i>*</i></label>
                         <input placeholder="+7 (___) ___-____." name="number" required>
                     </div>
                     <div class="div-button-2">
@@ -268,9 +269,9 @@
                         <button class="button-font-nonebox-1-Pc-2"></button>
                     </div>
                     <label class="text-agreement">
-                        <input type="checkbox" name="Agreement" class="real-checkbox">
+                        <input type="checkbox" name="Agreement" class="real-checkbox" onclick="document.querySelector('label.text-agreement p').style.color = (this.checked) ? 'rgba(20, 34, 81, 1)' : '';">
                         <span class="custom-checkbox"></span>
-                        Согласие на обработку персональных данных
+                        <p>Согласие на обработку персональных данных</p>
                     </label>
                 </form>
             </div>

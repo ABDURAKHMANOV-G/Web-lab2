@@ -21,10 +21,12 @@ html {
 
 a:hover{
     color: var(--gray-color);
+    transition: 0.3s;
 }
 
 a:focus{
     color: var(--light-blue-color);
+    transition: 0.3s;
 }
 
 
@@ -500,6 +502,7 @@ input {
     background-image: url(/Images/Checkbox_gray.svg);
     background-repeat: no-repeat;
     background-size: 65%;
+    cursor: pointer;
 }
 
 .custom-checkbox::before {
@@ -514,7 +517,7 @@ input {
     transform: scale(0);
 }
 
-.real-checkbox:checked+.custom-checkbox::before {
+.real-checkbox:checked + .custom-checkbox::before {
     transform: scale(1);
 }
 
@@ -585,10 +588,6 @@ input[name="email"]::-webkit-input-placeholder {
 
     .div-button{
         margin-top: 0px;
-    }
-
-    h2 {
-        
     }
 
     .div-button-Pc {
@@ -669,15 +668,7 @@ input[name="email"]::-webkit-input-placeholder {
         display: none;
     }
 
-    .inp1 p {
-        display: none;
-    }
-
-    .inp2 p {
-        display: none;
-    }
-
-    .inp3 p {
+    .input-i {
         display: none;
     }
 
@@ -1202,6 +1193,12 @@ input[name="email"]::-webkit-input-placeholder {
         font-size: 2.3rem;
     }
 
+    .input-i i{
+        color: red;
+        font-size: 2.3rem;
+    }
+
+
     input[name="name"]::-webkit-input-placeholder {
         color: var(--gray-color);
         font-size: 2.3rem;
@@ -1226,29 +1223,11 @@ input[name="email"]::-webkit-input-placeholder {
         grid-area: 1 / 2 / 1 / 4;
     }
 
-    .inp1 p {
+    .input-i {
         font-size: 2.3rem;
         color: var(--blue-color);
         align-self: center;
         width: 40%;
-        padding-top: 25px;
-        margin-left: 30px;
-    }
-
-    .inp2 p {
-        font-size: 2.3rem;
-        color: var(--blue-color);
-        align-self: center;
-        width: 35%;
-        padding-top: 25px;
-        margin-left: 30px;
-    }
-
-    .inp3 p {
-        font-size: 2.3rem;
-        color: var(--blue-color);
-        align-self: center;
-        width: 30%;
         padding-top: 25px;
         margin-left: 30px;
     }

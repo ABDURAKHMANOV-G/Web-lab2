@@ -21,10 +21,12 @@ html {
 
 a:hover{
     color: var(--gray-color);
+    transition: 0.3s;
 }
 
 a:focus{
     color: var(--light-blue-color);
+    transition: 0.3s;
 }
 
 :root {
@@ -202,6 +204,10 @@ input {
     text-align: center;
 }
 
+.textp i{
+    color: red;
+}
+
 .floor{
     display: flex;
 }
@@ -246,6 +252,11 @@ input[type="radio"]:checked + .gender:before{
     background-color: var(--light-blue-color);
 }
 
+.gender:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: 3px 5px 5px var(--gray-color);
+}
 
 .select{
     appearance: none;
